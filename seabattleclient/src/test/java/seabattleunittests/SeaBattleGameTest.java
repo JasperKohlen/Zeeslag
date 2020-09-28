@@ -268,6 +268,7 @@ class SeaBattleGameTest {
         );
     }
 
+    //TODO
     @Test
     void testNotifyWhenReadyAutomaticallyPlacedShips() {
         game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
@@ -280,6 +281,7 @@ class SeaBattleGameTest {
         );
     }
 
+    //TODO
     @Test
     void testNotifyWhenReadyFiveShipsPlacedPasses() {
         game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
@@ -296,6 +298,7 @@ class SeaBattleGameTest {
         );
     }
 
+    //TODO
     @Test
     void testNotifyWhenReadyNoShipsPlacedThrowsException() {
         game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
@@ -306,6 +309,7 @@ class SeaBattleGameTest {
         );
     }
 
+    //TODO
     @Test
     void testNotifyWhenReadyOneShipPlacedThrowsException(){
         game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
@@ -318,6 +322,7 @@ class SeaBattleGameTest {
         );
     }
 
+    //TODO
     @Test
     void testNotifyWhenReadyTwoShipsPlacedThrowsException() {
         game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
@@ -331,6 +336,7 @@ class SeaBattleGameTest {
         );
     }
 
+    //TODO
     @Test
     void testNotifyWhenReadyThreeShipsPlacedThrowsException() {
         game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
@@ -345,6 +351,7 @@ class SeaBattleGameTest {
         );
     }
 
+    //TODO
     @Test
     void testNotifyWhenReadyFourShipsPlacedThrowsException() {
         game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
@@ -360,6 +367,7 @@ class SeaBattleGameTest {
         );
     }
 
+    //TODO
     @Test
     void testFireShotMissesRegistersCorrectly() {
         game.registerPlayer("Henk", "ventilation", applicationPlayer, false);
@@ -386,6 +394,8 @@ class SeaBattleGameTest {
         assertEquals(expectedResult, actualResult);
     }
 
+    //TODO
+    //Not sure if the different methods are going to be implemented this way
     @Test
     void testFireShotHitsRegistersCorrectly() {
         game.registerPlayer("Henk", "ventilation", applicationPlayer, false);
@@ -410,5 +420,15 @@ class SeaBattleGameTest {
         int actualResult = applicationOpponent.numberSquaresPlayerWithSquareState(SquareState.SHOTHIT);
 
         assertEquals(expectedResult, actualResult);
+    }
+
+    //TODO
+    //Not sure how to test
+    @Test
+    void testGameStartWorksCorrectly() {
+        game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.startNewGame(playerNr);
     }
 }
