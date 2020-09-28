@@ -1,6 +1,3 @@
-/*
- * Sea Battle Start project.
- */
 package seabattleunittests;
 
 import org.junit.jupiter.api.AfterEach;
@@ -8,10 +5,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import seabattlegame.ISeaBattleGame;
 import seabattlegame.SeaBattleGame;
+import seabattlegui.ShipType;
 import seabattlegui.SquareState;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 /**
@@ -54,10 +51,34 @@ class SeaBattleGameTest {
     void testRegisterPlayerNameNull() {
 
         // Register player with parameter name null in single-player mode
-        String name = null;
         String password = "password";
-        boolean singlePlayerMode = true;
-        game.registerPlayer(name, password, applicationPlayer, singlePlayerMode);
+
+        assertThrows(IllegalArgumentException.class, () ->
+                game.registerPlayer(null, password, applicationPlayer, true)
+        );
+    }
+
+    @Test()
+    void testRegisterPlayerPasswordNull() {
+        assertThrows(IllegalArgumentException.class, () ->
+                game.registerPlayer("Henk", null, applicationPlayer, true)
+        );
+    }
+
+    @Test
+    void testRegisterPlayerCorrectly() {
+        assertDoesNotThrow(() -> game.registerPlayer("Henk", "password", applicationPlayer, true));
+    }
+
+    @Test
+    void testRegisterPlayerDuplicateName() {
+        String name = "Henk";
+        String password = "password";
+
+        game.registerPlayer(name, password, applicationPlayer, true);
+        assertThrows(IllegalArgumentException.class, () ->
+                game.registerPlayer(name, password, applicationPlayer, true)
+        );
     }
     
     /**
@@ -80,8 +101,314 @@ class SeaBattleGameTest {
         int actualResult = applicationPlayer.numberSquaresPlayerWithSquareState(SquareState.SHIP);
         assertEquals(expectedResult,actualResult, "Wrong number of squares where ships are placed");
     }
-    
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. 
-}
 
+    @Test
+    void testPlaceAircraftCarrierCorrectly() {
+        game.registerPlayer("Henk", "ventilating", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShip(playerNr, ShipType.AIRCRAFTCARRIER, 0,0,true);
+
+        int expectedResult = 5;
+        int actualResult = applicationPlayer.numberSquaresPlayerWithSquareState(SquareState.SHIP);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testPlaceBattleShipCorrectly() {
+        game.registerPlayer("Henk", "ventilating", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShip(playerNr, ShipType.BATTLESHIP, 0,0,true);
+
+        int expectedResult = 4;
+        int actualResult = applicationPlayer.numberSquaresPlayerWithSquareState(SquareState.SHIP);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testPlaceCruiserCorrectly() {
+        game.registerPlayer("Henk", "ventilating", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShip(playerNr, ShipType.CRUISER, 0,0,true);
+
+        int expectedResult = 3;
+        int actualResult = applicationPlayer.numberSquaresPlayerWithSquareState(SquareState.SHIP);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testPlaceSubmarineCorrectly() {
+        game.registerPlayer("Henk", "ventilating", applicationPlayer, true);
+
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShip(playerNr, ShipType.SUBMARINE, 0,0,true);
+
+        int expectedResult = 3;
+        int actualResult = applicationPlayer.numberSquaresPlayerWithSquareState(SquareState.SHIP);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testPlaceMineSweeperCorrectly() {
+        game.registerPlayer("Henk", "ventilating", applicationPlayer, true);
+
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShip(playerNr, ShipType.MINESWEEPER, 0,0,true);
+
+        int expectedResult = 2;
+        int actualResult = applicationPlayer.numberSquaresPlayerWithSquareState(SquareState.SHIP);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testPlaceMultipleShipsCorrectly() {
+        game.registerPlayer("Henk", "ventilating", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShip(playerNr, ShipType.MINESWEEPER, 0,0,true);
+        game.placeShip(playerNr, ShipType.SUBMARINE, 6,5,true);
+
+        int expectedResult = 2 + 3;
+        int actualResult = applicationPlayer.numberSquaresPlayerWithSquareState(SquareState.SHIP);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testPlaceShipOverlap() {
+        game.registerPlayer("Henk", "ventilating", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShip(playerNr, ShipType.MINESWEEPER, 0,0,true);
+
+        assertThrows(IllegalArgumentException.class, () ->
+                game.placeShip(playerNr, ShipType.SUBMARINE, 0,0,true)
+        );
+    }
+
+    @Test
+    void testPlaceShipOutsideGridPane() {
+        game.registerPlayer("Henk", "ventilating", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        assertThrows(IllegalArgumentException.class, () ->
+                game.placeShip(playerNr, ShipType.SUBMARINE,15,0,true)
+        );
+    }
+
+    @Test
+    void testRemoveShipCorrectly() {
+        game.registerPlayer("Henk", "ventilating", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShip(playerNr, ShipType.AIRCRAFTCARRIER, 0,0,true);
+        game.removeShip(playerNr, 0, 0);
+
+        int expectedResult = 0;
+        int actualResult = applicationPlayer.numberSquaresPlayerWithSquareState(SquareState.SHIP);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testRemoveShipWrongLocation() {
+        game.registerPlayer("Henk", "ventilating", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        assertThrows(IllegalArgumentException.class, () ->
+                game.removeShip(playerNr,0,0)
+        );
+    }
+
+    @Test
+    void testRemoveAllShipsTwoShipsCorrectly() {
+        game.registerPlayer("Henk", "ventilating", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShip(playerNr, ShipType.MINESWEEPER, 0,0,true);
+        game.placeShip(playerNr, ShipType.SUBMARINE, 9,5,true);
+        game.removeAllShips(playerNr);
+
+        int expectedResult = 0;
+        int actualResult = applicationPlayer.numberSquaresPlayerWithSquareState(SquareState.SHIP);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testRemoveAllShips_ShipsPlacedAutomatically() {
+        game.registerPlayer("Henk", "ventilating", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShipsAutomatically(playerNr);
+        game.removeAllShips(playerNr);
+
+        int expectedResult = 0;
+        int actualResult = applicationPlayer.numberSquaresPlayerWithSquareState(SquareState.SHIP);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testRemoveAllShipsNoShipsPlaced() {
+        game.registerPlayer("Henk", "ventilating", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        assertThrows(IllegalArgumentException.class, () ->
+                game.removeAllShips(playerNr)
+        );
+    }
+
+    @Test
+    void testNotifyWhenReadyAutomaticallyPlacedShips() {
+        game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShipsAutomatically(playerNr);
+
+        assertDoesNotThrow(() ->
+                game.notifyWhenReady(playerNr)
+        );
+    }
+
+    @Test
+    void testNotifyWhenReadyFiveShipsPlacedPasses() {
+        game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShip(playerNr, ShipType.AIRCRAFTCARRIER, 0, 0, false);
+        game.placeShip(playerNr, ShipType.BATTLESHIP, 1, 0, false);
+        game.placeShip(playerNr, ShipType.CRUISER, 2, 0, false);
+        game.placeShip(playerNr, ShipType.SUBMARINE, 3, 0, false);
+        game.placeShip(playerNr, ShipType.MINESWEEPER, 4, 0, false);
+
+        assertDoesNotThrow(() ->
+                game.notifyWhenReady(playerNr)
+        );
+    }
+
+    @Test
+    void testNotifyWhenReadyNoShipsPlacedThrowsException() {
+        game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        assertThrows(IllegalArgumentException.class, () ->
+                game.notifyWhenReady(playerNr)
+        );
+    }
+
+    @Test
+    void testNotifyWhenReadyOneShipPlacedThrowsException(){
+        game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShip(playerNr, ShipType.AIRCRAFTCARRIER, 0, 0, false);
+
+        assertThrows(IllegalArgumentException.class, () ->
+                game.notifyWhenReady(playerNr)
+        );
+    }
+
+    @Test
+    void testNotifyWhenReadyTwoShipsPlacedThrowsException() {
+        game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShip(playerNr, ShipType.AIRCRAFTCARRIER, 0, 0, false);
+        game.placeShip(playerNr, ShipType.BATTLESHIP, 1, 0, false);
+
+        assertThrows(IllegalArgumentException.class, () ->
+                game.notifyWhenReady(playerNr)
+        );
+    }
+
+    @Test
+    void testNotifyWhenReadyThreeShipsPlacedThrowsException() {
+        game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShip(playerNr, ShipType.AIRCRAFTCARRIER, 0, 0, false);
+        game.placeShip(playerNr, ShipType.BATTLESHIP, 1, 0, false);
+        game.placeShip(playerNr, ShipType.CRUISER, 2, 0, false);
+
+        assertThrows(IllegalArgumentException.class, () ->
+                game.notifyWhenReady(playerNr)
+        );
+    }
+
+    @Test
+    void testNotifyWhenReadyFourShipsPlacedThrowsException() {
+        game.registerPlayer("Henk", "ventilation", applicationPlayer, true);
+        int playerNr = applicationPlayer.getPlayerNumber();
+
+        game.placeShip(playerNr, ShipType.AIRCRAFTCARRIER, 0, 0, false);
+        game.placeShip(playerNr, ShipType.BATTLESHIP, 1, 0, false);
+        game.placeShip(playerNr, ShipType.CRUISER, 2, 0, false);
+        game.placeShip(playerNr, ShipType.SUBMARINE, 3, 0, false);
+
+        assertThrows(IllegalArgumentException.class, () ->
+                game.notifyWhenReady(playerNr)
+        );
+    }
+
+    @Test
+    void testFireShotMissesRegistersCorrectly() {
+        game.registerPlayer("Henk", "ventilation", applicationPlayer, false);
+        game.registerPlayer("Opponent", "Password", applicationOpponent, false);
+        int playerNr = applicationPlayer.getPlayerNumber();
+        int opponentPlayerNr = applicationOpponent.getPlayerNumber();
+
+        game.placeShip(opponentPlayerNr, ShipType.AIRCRAFTCARRIER, 0, 0, false);
+        game.placeShip(opponentPlayerNr, ShipType.BATTLESHIP, 1, 0, false);
+        game.placeShip(opponentPlayerNr, ShipType.CRUISER, 2, 0, false);
+        game.placeShip(opponentPlayerNr, ShipType.SUBMARINE, 3, 0, false);
+        game.placeShip(opponentPlayerNr, ShipType.MINESWEEPER, 3, 0, false);
+
+        game.placeShipsAutomatically(playerNr);
+
+        game.notifyWhenReady(playerNr);
+        game.notifyWhenReady(opponentPlayerNr);
+
+        game.fireShot(opponentPlayerNr, 8, 8);
+
+        int expectedResult = 1;
+        int actualResult = applicationOpponent.numberSquaresPlayerWithSquareState(SquareState.SHOTMISSED);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testFireShotHitsRegistersCorrectly() {
+        game.registerPlayer("Henk", "ventilation", applicationPlayer, false);
+        game.registerPlayer("Opponent", "Password", applicationOpponent, false);
+        int playerNr = applicationPlayer.getPlayerNumber();
+        int opponentPlayerNr = applicationOpponent.getPlayerNumber();
+
+        game.placeShip(opponentPlayerNr, ShipType.AIRCRAFTCARRIER, 0, 0, false);
+        game.placeShip(opponentPlayerNr, ShipType.BATTLESHIP, 1, 0, false);
+        game.placeShip(opponentPlayerNr, ShipType.CRUISER, 2, 0, false);
+        game.placeShip(opponentPlayerNr, ShipType.SUBMARINE, 3, 0, false);
+        game.placeShip(opponentPlayerNr, ShipType.MINESWEEPER, 3, 0, false);
+
+        game.placeShipsAutomatically(playerNr);
+
+        game.notifyWhenReady(playerNr);
+        game.notifyWhenReady(opponentPlayerNr);
+
+        game.fireShot(opponentPlayerNr, 0, 0);
+
+        int expectedResult = 1;
+        int actualResult = applicationOpponent.numberSquaresPlayerWithSquareState(SquareState.SHOTHIT);
+
+        assertEquals(expectedResult, actualResult);
+    }
+}
