@@ -5,6 +5,7 @@ package seabattlegui;
 
 /**
  * Indicate type of ship.
+ *
  * @author Nico Kuijpers
  */
 public enum ShipType {

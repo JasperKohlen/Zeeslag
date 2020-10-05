@@ -5,6 +5,7 @@ package seabattlegui;
 
 /**
  * Indicate the result of a shot.
+ *
  * @author Nico Kuijpers
  */
 public enum ShotType {
