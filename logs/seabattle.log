@@ -1,1 +1,5 @@
 2020-09-28 10:42:07,898 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-06 13:59:26,308 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-06 13:59:35,101 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for  - Select square in 's grid to place ships
+2020-10-06 14:02:46,255 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-06 14:02:49,536 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for  - Enter your name before registering

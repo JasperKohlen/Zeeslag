@@ -10,7 +10,7 @@ import org.springframework.web.server.ResponseStatusException;
 @RestController
 public class AuthController {
 //    @Autowired
-//    private UserService userService;
+//    private SeaBattleGame userService;
 
     @GetMapping(value = "login")
     public void Login (){//(@Valid @RequestBody AuthorisationModel authModel){

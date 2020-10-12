@@ -3,11 +3,11 @@
  */
 package seabattlegame;
 
+import Models.Player;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import seabattlegui.ISeaBattleGUI;
 import seabattlegui.ShipType;
-
 /**
  * The Sea Battle game. To be implemented.
  *
@@ -19,13 +19,14 @@ public class SeaBattleGame implements ISeaBattleGame {
 
     @Override
     public void registerPlayer(String name, String password, ISeaBattleGUI application, boolean singlePlayerMode) {
-        log.debug("Register Player {} - password {}", name, password);
-        //throw new UnsupportedOperationException("Method registerPlayer() not implemented.");
+        int playerNr = 0;
+        Player player = new Player(playerNr, name, password);
+
     }
 
     @Override
     public void placeShipsAutomatically(int playerNr) {
-        //throw new UnsupportedOperationException("Method placeShipsAutomatically() not implemented.");
+        throw new UnsupportedOperationException("Method placeShipsAutomatically() not implemented.");
     }
 
     @Override
