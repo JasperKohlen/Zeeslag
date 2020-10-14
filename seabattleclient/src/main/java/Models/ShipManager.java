@@ -16,20 +16,21 @@ public class ShipManager {
         this.allShips.add(ship);
     }
 
-    public void removeShip(Ship ship){
-        for (Ship s : getShips()) {
-            if (s.getShipType() == ship.getShipType()) {
-                getShips().remove(s);
-            }
-        }
-    }
-
     public boolean checkIfOverlap(int x, int y){
         for (Ship ship: allShips) {
             for (Position pos: ship.getPositions()) {
                 if(pos.getX() == x && pos.getY() == y){
                     return true;
                 }
+            }
+        }
+        return false;
+    }
+
+    public boolean checkIfExists(ShipType type) {
+        for (Ship ship : allShips) {
+            if (ship.getShipType() == type) {
+                return true;
             }
         }
         return false;
