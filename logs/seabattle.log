@@ -49,3 +49,32 @@
 2020-10-14 15:28:04,125 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Select square in aa's grid to place ship
 2020-10-14 15:28:25,235 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
 2020-10-14 15:28:29,991 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Player aa registered
+2020-10-14 15:49:02,758 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 15:49:07,607 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Player aa registered
+2020-10-14 15:51:27,031 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 15:51:29,821 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Player aa registered
+2020-10-14 16:09:20,088 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 16:09:24,957 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Player aa registered
+2020-10-14 16:09:26,524 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Select square in aa's grid to place ship
+2020-10-14 16:17:43,577 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 16:17:47,859 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Player aa registered
+2020-10-14 16:18:36,516 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 16:18:39,821 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Player aa registered
+2020-10-14 16:20:07,104 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 16:20:10,476 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Player aa registered
+2020-10-14 16:21:05,856 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 16:21:08,972 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Player aa registered
+2020-10-14 16:23:41,807 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 16:23:47,002 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 16:23:50,996 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for a - Player a registered
+2020-10-14 16:23:53,212 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for a - Select square in a's grid to place ship
+2020-10-14 16:25:50,138 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 16:25:53,860 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for a - Player a registered
+2020-10-14 16:30:29,442 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 16:30:32,978 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for a - Player a registered
+2020-10-14 16:30:35,011 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for a - Select square in a's grid to place ship
+2020-10-14 16:38:44,068 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 16:38:47,633 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for a - Player a registered
+2020-10-14 16:44:05,278 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 17:04:15,669 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 17:04:20,881 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for a - Player a registered

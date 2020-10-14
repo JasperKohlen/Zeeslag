@@ -16,6 +16,20 @@ public class ShipManager {
         this.allShips.add(ship);
     }
 
+    public void removeShip(Position pos) {
+        for (Ship s : getShips()) {
+            for (Position p : s.getPositions()) {
+                if (p.getX() == pos.getX() && p.getY() == pos.getY()) {
+                    allShips.remove(s);
+                }
+            }
+        }
+    }
+
+    public void removeAllShips(){
+        allShips.removeAll(allShips);
+    }
+
     public boolean checkIfOverlap(int x, int y){
         for (Ship ship: allShips) {
             for (Position pos: ship.getPositions()) {
