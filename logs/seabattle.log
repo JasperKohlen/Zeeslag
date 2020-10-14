@@ -41,3 +41,11 @@
 2020-10-14 15:21:47,493 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for Jasper - Player Jasper registered
 2020-10-14 15:22:05,008 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
 2020-10-14 15:22:10,445 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for Jesse - Player Jesse registered
+2020-10-14 15:25:53,200 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 15:25:57,488 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Player aa registered
+2020-10-14 15:25:59,878 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Select square in aa's grid to place ship
+2020-10-14 15:27:51,094 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 15:27:55,471 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Player aa registered
+2020-10-14 15:28:04,125 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Select square in aa's grid to place ship
+2020-10-14 15:28:25,235 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 15:28:29,991 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for aa - Player aa registered

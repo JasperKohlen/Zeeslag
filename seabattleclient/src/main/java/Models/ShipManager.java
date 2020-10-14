@@ -1,5 +1,7 @@
 package Models;
 
+import seabattlegui.ShipType;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +15,15 @@ public class ShipManager {
     public void addShip(Ship ship) {
         this.allShips.add(ship);
     }
+
+    public void removeShip(Ship ship){
+        for (Ship s : getShips()) {
+            if (s.getShipType() == ship.getShipType()) {
+                getShips().remove(s);
+            }
+        }
+    }
+
     public boolean checkIfOverlap(int x, int y){
         for (Ship ship: allShips) {
             for (Position pos: ship.getPositions()) {
