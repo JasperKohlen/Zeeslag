@@ -908,16 +908,22 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
             // Game is not in playing mode: select square to place a ship
             if (squareSelectedInOceanArea) {
                 Rectangle square = squaresOceanArea[selectedSquareX][selectedSquareY];
-            if (square.getFill().equals(Color.YELLOW)) {
-                    square.setFill(Color.LIGHTBLUE);
+                if (square.getFill().equals(Color.YELLOW)) {
+                    if(game.checkIfOnSquare(selectedSquareX, selectedSquareY)){
+                        square.setFill(Color.DARKGRAY);
+                    }
+                    else{
+                        square.setFill(Color.LIGHTBLUE);
+                    }
                 }
             }
             selectedSquareX = x;
             selectedSquareY = y;
             squaresOceanArea[x][y].setFill(Color.YELLOW);
             squareSelectedInOceanArea = true;
-        } else {
-            showMessage("Select square in " + opponentName + "\'s grid to fire");
+        }
+        else {
+            showMessage("Select square in " + opponentName + "'s grid to fire");
         }
     }
 

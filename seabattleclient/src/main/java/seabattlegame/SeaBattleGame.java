@@ -4,7 +4,9 @@
 package seabattlegame;
 
 import Models.Player;
+import Models.Position;
 import Models.Ship;
+import Models.ShipManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import seabattleai.IStrategy;
@@ -24,6 +26,7 @@ public class SeaBattleGame implements ISeaBattleGame {
 
     private static final Logger log = LoggerFactory.getLogger(SeaBattleGame.class);
     ISeaBattleGUI _application;
+    ShipManager manager = new ShipManager();
 
     @Override
     public void registerPlayer(String name, String password, ISeaBattleGUI application, boolean singlePlayerMode) {
@@ -48,53 +51,22 @@ public class SeaBattleGame implements ISeaBattleGame {
 
     @Override
     public void placeShip(int playerNr, ShipType shipType, int bowX, int bowY, boolean horizontal) {
-        switch(shipType) {
-            case AIRCRAFTCARRIER:
-                if(horizontal) {
-                    for(int i = 0; i < 5; i++) {
-                        _application.showSquarePlayer(playerNr, bowX + i, bowY, SquareState.SHIP);
-                    }
-                } else {
-                    for(int i = 0; i < 5; i++) {
-                        _application.showSquarePlayer(playerNr, bowX, bowY + i, SquareState.SHIP);
-                    }
-                }
-                break;
-            case BATTLESHIP:
-                if(horizontal) {
-                    for(int i = 0; i < 4; i++) {
-                        _application.showSquarePlayer(playerNr, bowX + i, bowY, SquareState.SHIP);
-                    }
-                } else {
-                    for(int i = 0; i < 4; i++) {
-                        _application.showSquarePlayer(playerNr, bowX, bowY + i, SquareState.SHIP);
-                    }
-                }
-                break;
-            case CRUISER:
-                case SUBMARINE:
-                if(horizontal) {
-                    for(int i = 0; i < 3; i++) {
-                        _application.showSquarePlayer(playerNr, bowX + i, bowY, SquareState.SHIP);
-                    }
-                } else {
-                    for(int i = 0; i < 3; i++) {
-                        _application.showSquarePlayer(playerNr, bowX, bowY + i, SquareState.SHIP);
-                    }
-                }
-                break;
-            case MINESWEEPER:
-                if(horizontal) {
-                    for(int i = 0; i < 2; i++) {
-                        _application.showSquarePlayer(playerNr, bowX + i, bowY, SquareState.SHIP);
-                    }
-                } else {
-                    for(int i = 0; i < 2; i++) {
-                        _application.showSquarePlayer(playerNr, bowX, bowY + i, SquareState.SHIP);
-                    }
-                }
-                break;
+        Ship ship = new Ship(shipType, bowX, bowY, horizontal);
+        Position pos1;
+        if(horizontal) {
+            for(int i = 0; i < shipType.length; i++) {
+                pos1 = new Position(bowX + i, bowY);
+                ship.addPositions(pos1);
+                _application.showSquarePlayer(playerNr, bowX + i, bowY, SquareState.SHIP);
+            }
+        } else {
+            for(int i = 0; i < shipType.length; i++) {
+                pos1 = new Position(bowX + i, bowY);
+                ship.addPositions(pos1);
+                _application.showSquarePlayer(playerNr, bowX, bowY + i, SquareState.SHIP);
+            }
         }
+        manager.addShip(ship);
     }
 
     @Override
@@ -121,4 +93,10 @@ public class SeaBattleGame implements ISeaBattleGame {
     public void startNewGame(int playerNr) {
         throw new UnsupportedOperationException("Method startNewGame() not implemented.");
     }
+
+    @Override
+    public boolean checkIfOnSquare(int x, int y){
+        return manager.checkIfOverlap(x, y);
+    }
+
 }
