@@ -3,6 +3,8 @@
  */
 package seabattlegui;
 
+import Models.Ship;
+import Models.ShipManager;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -711,7 +713,7 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
      * Setting the color will be performed by the JavaFX Application Thread.
      *
      * @param square the square of which the color should be changed.
-     * @param type   position type to determine the color.
+     * @param squareState position type to determine the color.
      */
     private void setSquareColor(final Rectangle square, final SquareState squareState) {
         // Ensure that changing the color of the square is performed by
@@ -900,12 +902,13 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
      * @param x     x-coordinate of selected square
      * @param y     y-coordinate of selected square
      */
+    //TODO: Vragen stellen hierover? Hoe moet je fiksen dat het weer grijs wordt
     private void rectangleOceanAreaMousePressed(MouseEvent event, int x, int y) {
         if (!playingMode) {
             // Game is not in playing mode: select square to place a ship
             if (squareSelectedInOceanArea) {
                 Rectangle square = squaresOceanArea[selectedSquareX][selectedSquareY];
-                if (square.getFill().equals(Color.YELLOW)) {
+            if (square.getFill().equals(Color.YELLOW)) {
                     square.setFill(Color.LIGHTBLUE);
                 }
             }

@@ -3,3 +3,28 @@
 2020-10-06 13:59:35,101 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for  - Select square in 's grid to place ships
 2020-10-06 14:02:46,255 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
 2020-10-06 14:02:49,536 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for  - Enter your name before registering
+2020-10-13 14:20:29,120 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-13 14:20:37,153 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie - Player henkie registered
+2020-10-13 14:20:54,205 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie - Select square in henkie's grid to place ship
+2020-10-13 14:29:31,763 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-13 14:29:38,075 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie - Player henkie registered
+2020-10-13 14:30:04,924 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-13 14:30:14,854 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie - Player henkie registered
+2020-10-13 14:35:36,725 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-13 14:35:42,702 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie - Player henkie registered
+2020-10-13 14:36:44,400 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-13 14:36:51,302 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie - Player henkie registered
+2020-10-13 14:37:14,941 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-13 14:37:20,319 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for kalsdkdaslas - Player kalsdkdaslas registered
+2020-10-13 14:38:11,181 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for kalsdkdaslas - Select square in kalsdkdaslas's grid to place ships
+2020-10-13 14:38:12,844 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for kalsdkdaslas - Select square in kalsdkdaslas's grid to place ships
+2020-10-13 14:45:23,991 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-13 14:45:28,545 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for lol - Player lol registered
+2020-10-13 14:46:47,968 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-13 14:46:51,416 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for asdas - Player asdas registered
+2020-10-13 14:48:33,739 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-13 14:48:39,198 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for DS - Player DS registered
+2020-10-13 14:52:00,674 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-13 14:52:42,680 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henki - Player henki registered
+2020-10-14 10:54:28,923 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-14 10:54:34,792 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for Jesse - Player Jesse registered
