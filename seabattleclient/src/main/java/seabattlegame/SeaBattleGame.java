@@ -53,20 +53,22 @@ public class SeaBattleGame implements ISeaBattleGame {
     public void placeShip(int playerNr, ShipType shipType, int bowX, int bowY, boolean horizontal) {
         Ship ship = new Ship(shipType, bowX, bowY, horizontal);
         Position pos1;
-        if(horizontal) {
-            for(int i = 0; i < shipType.length; i++) {
-                pos1 = new Position(bowX + i, bowY);
-                ship.addPositions(pos1);
-                _application.showSquarePlayer(playerNr, bowX + i, bowY, SquareState.SHIP);
+        if(!manager.checkIfExists(shipType)) {
+            if(horizontal) {
+                for(int i = 0; i < shipType.length; i++) {
+                    pos1 = new Position(bowX + i, bowY);
+                    ship.addPositions(pos1);
+                    _application.showSquarePlayer(playerNr, bowX + i, bowY, SquareState.SHIP);
+                }
+            } else {
+                for(int i = 0; i < shipType.length; i++) {
+                    pos1 = new Position(bowX + i, bowY);
+                    ship.addPositions(pos1);
+                    _application.showSquarePlayer(playerNr, bowX, bowY + i, SquareState.SHIP);
+                }
             }
-        } else {
-            for(int i = 0; i < shipType.length; i++) {
-                pos1 = new Position(bowX + i, bowY);
-                ship.addPositions(pos1);
-                _application.showSquarePlayer(playerNr, bowX, bowY + i, SquareState.SHIP);
-            }
+            manager.addShip(ship);
         }
-        manager.addShip(ship);
     }
 
     @Override
