@@ -16,14 +16,16 @@ public class ShipManager {
         this.allShips.add(ship);
     }
 
-    public void removeShip(Position pos) {
+    public Ship removeShip(Position pos) {
         for (Ship s : getShips()) {
             for (Position p : s.getPositions()) {
                 if (p.getX() == pos.getX() && p.getY() == pos.getY()) {
                     allShips.remove(s);
+                    return s;
                 }
             }
         }
+        return null;
     }
 
     public void removeAllShips(){
