@@ -30,11 +30,24 @@ public class ShipManager {
         allShips.removeAll(allShips);
     }
 
-    public boolean checkIfOverlap(int x, int y){
+    public boolean checkIfOverlap(int x, int y) {
         for (Ship ship: allShips) {
             for (Position pos: ship.getPositions()) {
                 if(pos.getX() == x && pos.getY() == y){
                     return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public boolean checkIfShipOverlap(Ship ship) {
+        for (Position pos: ship.getPositions()) {
+            for (Ship ship2: allShips) {
+                for (Position pos2: ship2.getPositions()) {
+                    if(pos.getX() == pos2.getX() && pos.getY() == pos2.getY()){
+                        return true;
+                    }
                 }
             }
         }

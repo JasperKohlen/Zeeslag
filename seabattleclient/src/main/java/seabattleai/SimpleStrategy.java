@@ -1,11 +1,13 @@
 package seabattleai;
 
+import Models.Position;
 import Models.Ship;
 import seabattlegui.ShipType;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class SimpleStrategy implements IStrategy {
 
@@ -22,4 +24,21 @@ public class SimpleStrategy implements IStrategy {
         return shipList;
     }
 
+    @Override
+    public Ship placeShipRandomly(ShipType shipType) {
+        Random rd = new Random();
+        int upperBound = 9;
+
+        return new Ship(shipType, rd.nextInt(upperBound), rd.nextInt(upperBound), rd.nextBoolean());
+    }
+
+    @Override
+    public List<Ship> placeShipsRandomly() {
+        placeShipRandomly(ShipType.AIRCRAFTCARRIER);
+        placeShipRandomly(ShipType.BATTLESHIP);
+        placeShipRandomly(ShipType.CRUISER);
+        placeShipRandomly(ShipType.SUBMARINE);
+        placeShipRandomly(ShipType.MINESWEEPER);
+        return new ArrayList<>();
+    }
 }

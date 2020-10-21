@@ -60,7 +60,18 @@ public class Ship {
         this.positions = positions;
     }
 
-    public void addPositions(Position pos) {
-        positions.add(pos);
+    public void addPositions() {
+        if(horizontal) {
+            for(int i = 0; i < this.getShipType().length; i++) {
+                Position pos1 = new Position(this.xBow + i, this.yBow);
+                this.positions.add(pos1);
+            }
+        } else {
+            for(int i = 0; i < this.getShipType().length; i++) {
+                Position pos1 = new Position(this.xBow, this.yBow + i);
+                this.positions.add(pos1);
+            }
+        }
+
     }
 }
