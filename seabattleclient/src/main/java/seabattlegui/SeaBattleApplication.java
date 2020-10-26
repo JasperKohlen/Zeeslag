@@ -782,8 +782,9 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
      * Notify that the player is ready to start the game.
      */
     private void notifyWhenReady() {
-        // Notify that the player is ready is start the game.
-        game.notifyWhenReady(playerNr);
+        if(game.notifyWhenReady(playerNr)) {
+            notifyStartGame(playerNr);
+        }
     }
 
     /**
@@ -902,7 +903,6 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
      * @param x     x-coordinate of selected square
      * @param y     y-coordinate of selected square
      */
-    //TODO: Vragen stellen hierover? Hoe moet je fiksen dat het weer grijs wordt
     private void rectangleOceanAreaMousePressed(MouseEvent event, int x, int y) {
         if (!playingMode) {
             // Game is not in playing mode: select square to place a ship

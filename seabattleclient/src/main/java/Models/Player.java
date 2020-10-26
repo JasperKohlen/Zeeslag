@@ -2,6 +2,7 @@ package Models;
 
 public class Player {
     int playerNr;
+    int sessionid;
     String name;
     String password;
 
@@ -33,5 +34,13 @@ public class Player {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public int getSessionid() {
+        return sessionid;
+    }
+
+    public void setSessionid(int sessionid) {
+        this.sessionid = sessionid;
     }
 }

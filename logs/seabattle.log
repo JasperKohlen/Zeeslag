@@ -110,3 +110,48 @@
 2020-10-21 13:05:41,825 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
 2020-10-21 13:05:57,681 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
 2020-10-21 13:06:03,121 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henk - Player henk registered
+2020-10-21 13:10:56,618 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-21 13:11:01,805 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-21 13:11:06,026 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - false
+2020-10-21 13:11:11,715 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - true
+2020-10-21 13:11:25,519 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - false
+2020-10-21 13:14:44,648 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-21 13:14:52,016 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for Henk - Player Henk registered
+2020-10-21 13:14:56,496 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for Henk - All ships have been placed
+2020-10-21 13:15:00,784 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for Henk - Select square in Henk's grid to place ships
+2020-10-21 13:15:02,955 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for Henk - Select square in Henk's grid to place ships
+2020-10-21 13:15:04,290 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for Henk - Select square in Henk's grid to place ships
+2020-10-21 13:16:26,173 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-21 13:16:31,344 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-21 13:17:51,260 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-21 13:17:55,539 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-21 13:18:04,096 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Select square in 123's grid to place ship
+2020-10-26 09:28:42,303 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-26 09:28:51,316 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for Jess - Player Jess registered
+2020-10-26 09:29:00,409 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for Jess - All ships have been placed
+2020-10-26 09:45:30,152 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-26 09:45:34,050 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-26 09:45:36,515 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - All ships have been placed
+2020-10-26 10:20:11,034 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-26 10:20:14,687 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-26 10:20:49,735 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - All ships have been placed
+2020-10-26 10:20:59,422 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Not all ships have been placed!
+2020-10-26 10:21:01,412 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Not all ships have been placed!
+2020-10-26 10:23:30,149 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Select square in 123's grid to place ships
+2020-10-26 10:53:59,994 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-26 10:54:06,542 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-26 10:54:08,451 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Select square in 123's grid to place ships
+2020-10-26 11:12:16,694 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-26 11:12:17,690 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for  - Select square in 's grid to place ships
+2020-10-26 11:12:22,741 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-26 11:16:51,593 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-26 11:16:56,353 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-26 11:17:00,168 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Start playing by selecting a square in Opponent's grid
+2020-10-26 11:17:04,004 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Wait till Opponent has fired a shot
+2020-10-26 11:17:07,241 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Wait till Opponent has fired a shot
+2020-10-26 11:18:00,935 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-26 11:18:06,423 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-26 11:18:11,851 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Start playing by selecting a square in Opponent's grid
+2020-10-26 11:18:14,333 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Wait till Opponent has fired a shot
+2020-10-26 11:18:16,781 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Wait till Opponent has fired a shot
+2020-10-26 11:18:18,208 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Wait till Opponent has fired a shot
