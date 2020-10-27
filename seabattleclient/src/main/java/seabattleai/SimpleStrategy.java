@@ -1,8 +1,7 @@
 package seabattleai;
 
-import Models.Position;
 import Models.Ship;
-import seabattlegui.ShipType;
+import enums.ShipType;
 
 import java.util.ArrayList;
 import java.util.Arrays;

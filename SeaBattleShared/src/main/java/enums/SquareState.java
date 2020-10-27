@@ -1,11 +1,7 @@
-/*
- * Sea Battle Start project.
- */
-package seabattlegui;
+package enums;
 
 /**
  * Indicate the state of a square.
- *
  * @author Nico Kuijpers
  */
 public enum SquareState {

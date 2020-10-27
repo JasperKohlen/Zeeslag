@@ -1,11 +1,7 @@
-/*
- * Sea Battle Start project.
- */
-package seabattlegui;
+package enums;
 
 /**
  * Indicate type of ship.
- *
  * @author Nico Kuijpers
  */
 public enum ShipType {
@@ -17,7 +13,7 @@ public enum ShipType {
 
     public final int length;
 
-    ShipType(int length) {
+    private ShipType(int length) {
         this.length = length;
     }
 }

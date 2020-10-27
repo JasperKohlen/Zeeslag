@@ -1,13 +1,13 @@
 package seabattleunittests;
 
+import enums.ShipType;
+import enums.ShotType;
+import enums.SquareState;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import seabattlegame.ISeaBattleGame;
 import seabattlegame.SeaBattleGame;
-import seabattlegui.ShipType;
-import seabattlegui.ShotType;
-import seabattlegui.SquareState;
 
 import static org.junit.jupiter.api.Assertions.*;
 

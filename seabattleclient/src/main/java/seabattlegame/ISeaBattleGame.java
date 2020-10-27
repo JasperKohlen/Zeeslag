@@ -3,8 +3,8 @@
  */
 package seabattlegame;
 
+import enums.ShipType;
 import seabattlegui.ISeaBattleGUI;
-import seabattlegui.ShipType;
 
 /**
  * Interface provided by the Sea Battle game to the graphical user interface.

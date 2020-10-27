@@ -5,6 +5,9 @@ package seabattlegui;
 
 import Models.Ship;
 import Models.ShipManager;
+import enums.ShipType;
+import enums.ShotType;
+import enums.SquareState;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -804,6 +807,50 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
         buttonRegisterPlayer.setDisable(false);
     }
 
+    public void notifyStartGameMultiplayer(int playerNr, int startingPlayer) {
+        // Check identification of player
+        if (playerNr != this.playerNr) {
+            showMessage("ERROR: Wrong player number method notifyStartGame()");
+            return;
+        }
+        playerTurn = startingPlayer;
+
+        if(playerNr == startingPlayer){
+            // Set playing mode and disable placing/removing of ships
+            playingMode = true;
+            labelHorizontalVertical.setDisable(true);
+            radioHorizontal.setDisable(true);
+            radioVertical.setDisable(true);
+            buttonPlaceAllShips.setDisable(true);
+            buttonRemoveAllShips.setDisable(true);
+            buttonReadyToPlay.setDisable(true);
+            buttonStartNewGame.setDisable(true);
+            buttonPlaceAircraftCarrier.setDisable(true);
+            buttonPlaceBattleShip.setDisable(true);
+            buttonPlaceCruiser.setDisable(true);
+            buttonPlaceSubmarine.setDisable(true);
+            buttonPlaceMineSweeper.setDisable(true);
+            buttonRemoveShip.setDisable(true);
+            showMessage("Start playing by selecting a square in " + opponentName + "\'s grid");
+        }else{
+            playingMode = true;
+            labelHorizontalVertical.setDisable(true);
+            radioHorizontal.setDisable(true);
+            radioVertical.setDisable(true);
+            buttonPlaceAllShips.setDisable(true);
+            buttonRemoveAllShips.setDisable(true);
+            buttonReadyToPlay.setDisable(true);
+            buttonStartNewGame.setDisable(true);
+            buttonPlaceAircraftCarrier.setDisable(true);
+            buttonPlaceBattleShip.setDisable(true);
+            buttonPlaceCruiser.setDisable(true);
+            buttonPlaceSubmarine.setDisable(true);
+            buttonPlaceMineSweeper.setDisable(true);
+            buttonRemoveShip.setDisable(true);
+            showMessage("Game started, other player is first.");
+        }
+    }
+
     /**
      * Place a ship of a certain ship type. The bow of the ship will
      * be placed at the selected square in the ocean area. The stern is
@@ -933,7 +980,7 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
      * called by the Java FX Application thread or by another thread
      * handling communication with the game server.
      */
-    private synchronized void switchTurn() {
+    public synchronized void switchTurn() {
         playerTurn = 1 - playerTurn;
     }
 
@@ -952,5 +999,31 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
      */
     public static void main(String[] args) {
         launch(args);
+    }
+
+    public void showReadyMessage(String wait_for_other_player) {
+        labelHorizontalVertical.setDisable(true);
+        radioHorizontal.setDisable(true);
+        radioVertical.setDisable(true);
+        buttonPlaceAllShips.setDisable(true);
+        buttonRemoveAllShips.setDisable(true);
+        buttonReadyToPlay.setDisable(true);
+        buttonStartNewGame.setDisable(true);
+        buttonPlaceAircraftCarrier.setDisable(true);
+        buttonPlaceBattleShip.setDisable(true);
+        buttonPlaceCruiser.setDisable(true);
+        buttonPlaceSubmarine.setDisable(true);
+        buttonPlaceMineSweeper.setDisable(true);
+        buttonRemoveShip.setDisable(true);
+
+        showMessage("Please wait for other player.");
+    }
+
+    public void notifyNotReady() {
+        showMessage("Please place all ships.");
+    }
+
+    public int getPlayerNr() {
+        return playerNr;
     }
 }

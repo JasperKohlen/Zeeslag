@@ -3,9 +3,9 @@
  */
 package seabattleunittests;
 
+import enums.ShotType;
+import enums.SquareState;
 import seabattlegui.ISeaBattleGUI;
-import seabattlegui.ShotType;
-import seabattlegui.SquareState;
 
 /**
  * Mock Sea Battle application to support unit testing of the Sea Battle game.
