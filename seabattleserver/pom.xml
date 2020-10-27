@@ -44,5 +44,10 @@
             <version>${junit-jupiter-api.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty.websocket</groupId>
+            <artifactId>javax-websocket-server-impl</artifactId>
+            <version>9.4.15.v20190215</version>
+        </dependency>
     </dependencies>
 </project>
