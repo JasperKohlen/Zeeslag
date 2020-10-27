@@ -110,3 +110,7 @@
 2020-10-21 13:05:41,825 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
 2020-10-21 13:05:57,681 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
 2020-10-21 13:06:03,121 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henk - Player henk registered
+2020-10-26 09:29:51,013 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-26 09:29:55,219 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdas - Player sdas registered
+2020-10-26 12:05:55,310 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-26 12:06:02,050 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
