@@ -2,6 +2,7 @@ package Models;
 
 import enums.ShipType;
 
+import javax.websocket.Session;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -79,5 +80,10 @@ public class ShipManager {
             return true;
         }
         return false;
+    }
+
+
+    public int getPlayerNumber(Player player) {
+        return player.playerNr;
     }
 }
