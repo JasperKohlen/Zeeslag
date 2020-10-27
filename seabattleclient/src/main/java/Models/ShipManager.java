@@ -56,11 +56,27 @@ public class ShipManager {
         return false;
     }
 
+    public boolean isInGrid(Ship ship) {
+        for(Position pos: ship.getPositions()) {
+            if(pos.getX() > 9 || pos.getY() > 9) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public boolean checkIfExists(ShipType type) {
         for (Ship ship : allShips) {
             if (ship.getShipType() == type) {
                 return true;
             }
+        }
+        return false;
+    }
+
+    public boolean checkIfAllShipsHaveBeenPlaced() {
+        if(getShips().size() == 5) {
+            return true;
         }
         return false;
     }

@@ -89,7 +89,7 @@ public interface ISeaBattleGame {
      *
      * @param playerNr identification of player who is ready to play the game
      */
-    public void notifyWhenReady(int playerNr);
+    public boolean notifyWhenReady(int playerNr);
 
     /**
      * Fire a shot at the opponent's square with given coordinates.
@@ -128,4 +128,6 @@ public interface ISeaBattleGame {
     public void startNewGame(int playerNr);
 
     public boolean checkIfOnSquare(int x, int y);
+
+    public boolean checkIfOpponentReady(int playerNr);
 }

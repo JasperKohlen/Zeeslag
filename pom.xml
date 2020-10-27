@@ -6,6 +6,7 @@
     <modules>
         <module>seabattleclient</module>
         <module>seabattleserver</module>
+        <module>seabattlerest</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -13,7 +14,12 @@
         <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <jersey-server.version>2.27</jersey-server.version>
+        <jetty-server.version>9.4.14.v20181114</jetty-server.version>
+        <logback.version>1.2.3</logback.version>
+        <junit-jupiter-engine.version>5.3.2</junit-jupiter-engine.version>
     </properties>
+
 
     <build>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
