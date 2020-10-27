@@ -7,13 +7,13 @@ import Models.Player;
 import Models.Position;
 import Models.Ship;
 import Models.ShipManager;
+import enums.ShipType;
+import enums.SquareState;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import seabattleai.IStrategy;
 import seabattleai.SimpleStrategy;
 import seabattlegui.ISeaBattleGUI;
-import seabattlegui.ShipType;
-import seabattlegui.SquareState;
 
 import java.util.List;
 

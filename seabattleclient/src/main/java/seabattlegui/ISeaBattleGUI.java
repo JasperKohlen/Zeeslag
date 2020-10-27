@@ -3,6 +3,9 @@
  */
 package seabattlegui;
 
+import enums.ShotType;
+import enums.SquareState;
+
 /**
  * Interface provided by the graphical user interface of the sea battle game.
  *
