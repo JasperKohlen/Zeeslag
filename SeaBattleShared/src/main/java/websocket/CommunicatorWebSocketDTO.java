@@ -16,7 +16,7 @@ public class CommunicatorWebSocketDTO {
 
 
 
-    private TileDTO[][] tiles;
+    private SquareDTO[][] tiles;
     private ShotType shotType;
 
     public CommunicatorWebSocketDTO(int playerNr, ShotType shotType) {
@@ -29,12 +29,12 @@ public class CommunicatorWebSocketDTO {
         this.playerNr = playerNr;
     }
 
-    public CommunicatorWebSocketDTO(int playerNr, TileDTO[][] tileDTO) {
+    public CommunicatorWebSocketDTO(int playerNr, SquareDTO[][] squareDTO) {
         this.playerNr = playerNr;
-        this.tiles = tileDTO;
+        this.tiles = squareDTO;
     }
 
-    public TileDTO[][] getTiles() {
+    public SquareDTO[][] getTiles() {
         return tiles;
     }
 
@@ -48,7 +48,7 @@ public class CommunicatorWebSocketDTO {
         this.singleplayerMode = singleplayerMode;
     }
 
-    public CommunicatorWebSocketDTO(TileDTO[][] tiles) {
+    public CommunicatorWebSocketDTO(SquareDTO[][] tiles) {
         this.tiles = tiles;
     }
 

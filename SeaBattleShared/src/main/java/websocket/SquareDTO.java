@@ -2,14 +2,14 @@ package websocket;
 
 import enums.SquareState;
 
-public class TileDTO {
+public class SquareDTO {
 
     private SquareState tileState;
     private int x;
     private int y;
     private boolean containsShip;
 
-    public TileDTO(SquareState tileState, int x, int y, boolean containsShip) {
+    public SquareDTO(SquareState tileState, int x, int y, boolean containsShip) {
         this.tileState = tileState;
         this.x = x;
         this.y = y;

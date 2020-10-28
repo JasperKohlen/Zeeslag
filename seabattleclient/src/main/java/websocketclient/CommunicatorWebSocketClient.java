@@ -5,7 +5,7 @@ import com.google.gson.JsonSyntaxException;
 import seabattlegui.SeaBattleApplication;
 import websocket.CommunicatorWebSocketDTO;
 import websocket.CommunicatorWebSocketMessage;
-import websocket.TileDTO;
+import websocket.SquareDTO;
 
 import javax.websocket.*;
 import java.io.IOException;
@@ -126,7 +126,7 @@ public class CommunicatorWebSocketClient extends Communicator{
                 seaBattleApplication.setOpponentName(0, "cpu");
                 break;
             case SHOWPLAYERFIELD:
-                TileDTO[][] tiles = dto.getTiles();
+                SquareDTO[][] tiles = dto.getTiles();
                 for(int x  = 0; x < 10; x++){
                     for(int y  = 0; y < 10; y++){
                         seaBattleApplication.showSquarePlayer(seaBattleApplication.getPlayerNr(), x,y,tiles[x][y].getTileState());
@@ -134,7 +134,7 @@ public class CommunicatorWebSocketClient extends Communicator{
                 }
                 break;
             case SHOWOPPONENTPLAYERFIELD:
-                TileDTO[][] opponentTiles = dto.getTiles();
+                SquareDTO[][] opponentTiles = dto.getTiles();
                 for(int x  = 0; x < 10; x++){
                     for(int y  = 0; y < 10; y++){
                         seaBattleApplication.showSquareOpponent(seaBattleApplication.getPlayerNr(), x,y,opponentTiles[x][y].getTileState());

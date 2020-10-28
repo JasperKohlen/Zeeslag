@@ -5,7 +5,7 @@ import Models.Player;
 import Models.Square;
 import enums.ShotType;
 import websocket.CommunicatorWebSocketDTO;
-import websocket.TileDTO;
+import websocket.SquareDTO;
 
 import javax.websocket.Session;
 
@@ -169,24 +169,24 @@ public class ServerLogicHandler {
 
     public void sendPlayerField(Game game, int playerNr, Session sess){
         Square[][] squares = game.getPlayer(playerNr).getSquares();
-        TileDTO[][] tileDTO = makePlayerFieldDTO(squares);
-        messageSender.showPlayerField(sess, tileDTO, playerNr);
+        SquareDTO[][] squareDTO = makePlayerFieldDTO(squares);
+        messageSender.showPlayerField(sess, squareDTO, playerNr);
     }
 
     public void sendOpponentPlayerField(Game game, int playerNr, Session sess){
         Square[][] squares = game.getPlayer(playerNr).getOpponentSquares();
-        TileDTO[][] tileDTO = makePlayerFieldDTO(squares);
-        messageSender.showOpponentField(sess, tileDTO, playerNr);
+        SquareDTO[][] squareDTO = makePlayerFieldDTO(squares);
+        messageSender.showOpponentField(sess, squareDTO, playerNr);
     }
 
-    public TileDTO[][] makePlayerFieldDTO(Square[][] squares){
-        TileDTO[][] tileDTO = new TileDTO[10][10];
+    public SquareDTO[][] makePlayerFieldDTO(Square[][] squares){
+        SquareDTO[][] squareDTO = new SquareDTO[10][10];
         for(int x  = 0; x < 10; x++){
             for(int y  = 0; y < 10; y++){
                 Square square = squares[x][y];
-                tileDTO[x][y] = new TileDTO(square.getSquareState(), square.getX(), square.getY(), square.isContainsShip());
+                squareDTO[x][y] = new SquareDTO(square.getSquareState(), square.getX(), square.getY(), square.isContainsShip());
             }
         }
-        return tileDTO;
+        return squareDTO;
     }
 }

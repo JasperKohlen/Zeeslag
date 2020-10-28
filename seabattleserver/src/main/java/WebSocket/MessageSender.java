@@ -1,6 +1,5 @@
 package WebSocket;
 
-import Models.Game;
 import Models.Player;
 import Models.ShipManager;
 import com.google.gson.Gson;
@@ -8,7 +7,7 @@ import enums.ShotType;
 import websocket.CommunicatorWebSocketDTO;
 import websocket.CommunicatorWebSocketMessage;
 import websocket.CommunicatorWebSocketMessageOperation;
-import websocket.TileDTO;
+import websocket.SquareDTO;
 
 import javax.websocket.Session;
 
@@ -56,15 +55,15 @@ public class MessageSender {
         sess.getAsyncRemote().sendText(message);
     }
 
-    public void showPlayerField(Session sess, TileDTO[][] tileDTO, int playerNr) {
-        CommunicatorWebSocketDTO socketDTO = new CommunicatorWebSocketDTO(playerNr, tileDTO);
+    public void showPlayerField(Session sess, SquareDTO[][] squareDTO, int playerNr) {
+        CommunicatorWebSocketDTO socketDTO = new CommunicatorWebSocketDTO(playerNr, squareDTO);
         CommunicatorWebSocketMessage socketMessage = new CommunicatorWebSocketMessage(CommunicatorWebSocketMessageOperation.SHOWPLAYERFIELD, socketDTO);
         String message = gson.toJson(socketMessage, CommunicatorWebSocketMessage.class);
         sess.getAsyncRemote().sendText(message);
     }
 
-    public void showOpponentField(Session sess, TileDTO[][] tileDTO, int playerNr){
-        CommunicatorWebSocketDTO socketDTO = new CommunicatorWebSocketDTO(playerNr, tileDTO);
+    public void showOpponentField(Session sess, SquareDTO[][] squareDTO, int playerNr){
+        CommunicatorWebSocketDTO socketDTO = new CommunicatorWebSocketDTO(playerNr, squareDTO);
         CommunicatorWebSocketMessage socketMessage = new CommunicatorWebSocketMessage(CommunicatorWebSocketMessageOperation.SHOWOPPONENTPLAYERFIELD, socketDTO);
         String message = gson.toJson(socketMessage, CommunicatorWebSocketMessage.class);
         sess.getAsyncRemote().sendText(message);
