@@ -3,17 +3,18 @@
  */
 package seabattlegame;
 
-import Models.Player;
-import Models.Position;
-import Models.Ship;
-import Models.ShipManager;
+import Models.*;
 import enums.ShipType;
+import enums.ShotType;
 import enums.SquareState;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import restfulclient.SeaBattleREST;
 import seabattleai.IStrategy;
 import seabattleai.SimpleStrategy;
 import seabattlegui.ISeaBattleGUI;
+import websocket.CommunicatorWebSocketDTO;
+import websocketclient.WebSocketClientEventHandler;
 
 import java.util.List;
 
@@ -30,20 +31,16 @@ public class SeaBattleGame implements ISeaBattleGame {
     boolean singlePlayer;
     Player player;
     Player opponent;
+    private WebSocketClientEventHandler webSocketClient;
+    public SeaBattleGame(WebSocketClientEventHandler webSocketClient){
+        this.webSocketClient = webSocketClient;
+    }
 
     @Override
     public void registerPlayer(String name, String password, ISeaBattleGUI application, boolean singlePlayerMode) {
-        //TODO: get Player from Server (integer) and check if name is unique, check if only one player is there (server)
-        if (name == null || password == null) {
-            throw new IllegalArgumentException();
-        } else if(singlePlayerMode){
-            int playerNr = 0;
-            this._application = application;
-            _application.setPlayerNumber(playerNr, name);
-            singlePlayer = singlePlayerMode;
-            opponent = new Player(-1, "opponent", "notarobot");
-        } else {
-
+        SeaBattleREST restClient = new SeaBattleREST();
+        if(restClient.register(name, password)){
+            webSocketClient.register(new CommunicatorWebSocketDTO(name, password, singlePlayerMode));
         }
     }
 
@@ -52,25 +49,25 @@ public class SeaBattleGame implements ISeaBattleGame {
         IStrategy strategy = new SimpleStrategy();
         List<Ship> ships = strategy.placeShips();
         for (Ship ship: ships){
-            placeShip(playerNr, ship.getShipType(), ship.getxBow(), ship.getyBow(), ship.isHorizontal());
+            placeShip(playerNr, ship.getShipType(), ship.getX(), ship.getY(), ship.isHorizontal());
         }
     }
 
     @Override
     public void placeShip(int playerNr, ShipType shipType, int bowX, int bowY, boolean horizontal) {
         Ship ship = new Ship(shipType, bowX, bowY, horizontal);
-        Position pos1;
-        ship.addPositions();
+        Square square;
+        ship.addSquares();
         if (!manager.checkIfExists(ship.getShipType()) && !manager.checkIfShipOverlap(ship) && manager.isInGrid(ship)) {
             if (horizontal) {
                 for (int i = 0; i < shipType.length; i++) {
-                    pos1 = new Position(bowX + i, bowY);
-                    _application.showSquarePlayer(playerNr, pos1.getX(), pos1.getY(), SquareState.SHIP);
+                    square = new Square(SquareState.SHIP, bowX + i, bowY, true);
+                    _application.showSquarePlayer(playerNr, square.getX(), square.getY(), SquareState.SHIP);
                 }
             } else {
                 for (int i = 0; i < shipType.length; i++) {
-                    pos1 = new Position(bowX, bowY + i);
-                    _application.showSquarePlayer(playerNr, pos1.getX(), pos1.getY(), SquareState.SHIP);
+                    square = new Square(SquareState.SHIP, bowX, bowY + i, true);
+                    _application.showSquarePlayer(playerNr, square.getX(), square.getY(), SquareState.SHIP);
                 }
             }
             manager.addShip(ship);
@@ -83,8 +80,8 @@ public class SeaBattleGame implements ISeaBattleGame {
         Ship ship = manager.removeShip(selectedPos);
         if (ship != null) {
             for (int i = 0; i < ship.getShipType().length; i++) {
-                for (Position pos: ship.getPositions()) {
-                    _application.showSquarePlayer(playerNr, pos.getX(), pos.getY(), SquareState.WATER);
+                for (Square s: ship.getSquares()) {
+                    _application.showSquarePlayer(playerNr, s.getX(), s.getY(), SquareState.WATER);
                 }
             }
         }
@@ -93,8 +90,8 @@ public class SeaBattleGame implements ISeaBattleGame {
     @Override
     public void removeAllShips(int playerNr) {
         for (Ship s: manager.getShips()) {
-            for (Position pos: s.getPositions()) {
-                _application.showSquarePlayer(playerNr, pos.getX(), pos.getY(), SquareState.WATER);
+            for (Square square: s.getSquares()) {
+                _application.showSquarePlayer(playerNr, square.getX(), square.getY(), SquareState.WATER);
             }
         }
         manager.removeAllShips();
@@ -117,8 +114,9 @@ public class SeaBattleGame implements ISeaBattleGame {
     }
 
     @Override
-    public void fireShot(int playerNr, int posX, int posY) {
+    public ShotType fireShot(int playerNr, int posX, int posY) {
         manager.checkIfOverlap(posX, posY);
+        return ShotType.MISSED;
     }
 
     @Override

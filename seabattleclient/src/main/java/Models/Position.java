@@ -1,7 +1,5 @@
 package Models;
 
-import seabattlegui.SquareState;
-
 public class Position {
     private int X;
     private int Y;

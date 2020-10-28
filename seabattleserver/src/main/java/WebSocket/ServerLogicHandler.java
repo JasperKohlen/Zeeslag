@@ -2,12 +2,10 @@ package WebSocket;
 
 import Models.Game;
 import Models.Player;
-import Models.ShipManager;
+import Models.Square;
 import enums.ShotType;
-import seabattlegame.SeaBattleGame;
 import websocket.CommunicatorWebSocketDTO;
 import websocket.TileDTO;
-import websocketclient.Communicator;
 
 import javax.websocket.Session;
 
@@ -19,69 +17,69 @@ public class ServerLogicHandler {
         this.communicatorWebSocket = communicatorWebSocket;
     }
 
-//    public void registerAccount(ShipManager shipManager, CommunicatorWebSocketDTO dto, Session session){
-//        if(dto.getUsername() == null || dto.getPassword() == null || dto.getUsername().equals("") || dto.getPassword().equals("")){
-//            throw new IllegalArgumentException();
-//        }
-//        else{
-//            Player player = new Player(dto.getPlayerNr(), dto.getUsername(), dto.getPassword());
-//            shipManager.registerPlayer(player, dto.isSingleplayerMode());
-//            int playerNr = game.getPlayerNumber(player);
-//            player.setPlayerNr(playerNr);
-//            messageSender.setPlayer(session, playerNr, dto.getUsername());
-//
-//            if(dto.isSingleplayerMode()){
-//                messageSender.notifySinglePlayerUser(session,game, player);
-//                return;
-//            }
-//            else{
-//                if(game.gameIsFull()){
-//                    for(Player p : game.getPlayerList()){
-//                        if(p != player){
-//                            for(Session s : game.getSessions()){
-//                                if(s != session){
-//                                    messageSender.setPlayerOpponent(s, game.getOpponent(playerNr).getPlayerNr(), dto.getUsername());
-//                                    break;
-//                                }
-//                            }
-//                        }
-//                    }
-//                    for(Player p : game.getPlayerList()) {
-//                        if (p == player) {
-//                            for (Session s : game.getSessions()) {
-//                                if (s == session) {
-//                                    messageSender.setPlayerOpponent(s, playerNr, game.getOpponent(playerNr).getName());
-//                                    break;
-//                                }
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//    }
+    public void registerAccount(Game game, CommunicatorWebSocketDTO dto, Session session){
+        if(dto.getUsername() == null || dto.getPassword() == null || dto.getUsername().equals("") || dto.getPassword().equals("")){
+            throw new IllegalArgumentException();
+        }
+        else{
+            Player player = new Player(dto.getUsername(), false);
+            game.registerPlayer(player, dto.isSingleplayerMode());
+            int playerNr = game.getPlayerNumber(player);
+            player.setPlayerNr(playerNr);
+            messageSender.setPlayer(session, playerNr, dto.getUsername());
 
-    public void placeShipsAuto(SeaBattleGame game, int playerNr, Session session){
+            if(dto.isSingleplayerMode()){
+                messageSender.notifySinglePlayerUser(session, game, player);
+                return;
+            }
+            else{
+                if(game.gameIsFull()){
+                    for(Player p : game.getPlayerList()){
+                        if(p != player){
+                            for(Session s : game.getSessions()){
+                                if(s != session){
+                                    messageSender.setPlayerOpponent(s, game.getOpponent(playerNr).getPlayerNr(), dto.getUsername());
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    for(Player p : game.getPlayerList()) {
+                        if (p == player) {
+                            for (Session s : game.getSessions()) {
+                                if (s == session) {
+                                    messageSender.setPlayerOpponent(s, playerNr, game.getOpponent(playerNr).getName());
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    public void placeShipsAuto(Game game, int playerNr, Session session){
         game.placeShipsAutomatically(playerNr);
         sendPlayerField(game, playerNr,session);
     }
 
-    public void removeShip(SeaBattleGame game, CommunicatorWebSocketDTO dto, Session session) {
+    public void removeShip(Game game, CommunicatorWebSocketDTO dto, Session session) {
         game.removeShip(dto.getPlayerNr(), dto.getPosX(),dto.getPosY());
         sendPlayerField(game, dto.getPlayerNr(), session);
     }
 
-    public void placeShip(SeaBattleGame game, CommunicatorWebSocketDTO dto, Session session) {
+    public void placeShip(Game game, CommunicatorWebSocketDTO dto, Session session) {
         game.placeShip(dto.getPlayerNr(), dto.getShipType(),dto.getPosX(),dto.getPosY(),dto.isHorizontal());
         sendPlayerField(game, dto.getPlayerNr(), session);
     }
 
-    public void removeAllShips(SeaBattleGame game, int playerNr, Session session) {
+    public void removeAllShips(Game game, int playerNr, Session session) {
         game.removeAllShips(playerNr);
         sendPlayerField(game, playerNr, session);
     }
 
-    public void botShoots(SeaBattleGame game, Session session){
+    public void botShoots(Game game, Session session){
         boolean shotAllowed = false;
         while (!shotAllowed) {
             int randomX = (int) (Math.random() * 10);
@@ -94,23 +92,23 @@ public class ServerLogicHandler {
         }
     }
 
-//    public void fireShot(SeaBattleGame game, CommunicatorWebSocketDTO dto, Session session) {
-//        ShotType shottype = game.fireShot(dto.getPlayerNr(), dto.getPosX(),dto.getPosY());
-//
-//        sendOpponentPlayerField(game, dto.getPlayerNr(), session);
-//        messageSender.showShotType(dto.getPlayerNr(),shottype,session);
-//        messageSender.switchTurn(session);
-//
-//        if(game.isSinglePlayerMode()) {
-//            botShoots(game, session);
-//            sendPlayerField(game, dto.getPlayerNr(), session);
-//            sendOpponentPlayerField(game, dto.getPlayerNr(), session);
-//        }
-//        else{
-//            // update other player
-//            updateOtherPlayerAfterFireShot(game, session, shottype, dto);
-//        }
-//    }
+    public void fireShot(Game game, CommunicatorWebSocketDTO dto, Session session) {
+        ShotType shottype = game.fireShot(dto.getPlayerNr(), dto.getPosX(),dto.getPosY());
+
+        sendOpponentPlayerField(game, dto.getPlayerNr(), session);
+        messageSender.showShotType(dto.getPlayerNr(),shottype,session);
+        messageSender.switchTurn(session);
+
+        if(game.isSinglePlayerMode()) {
+            botShoots(game, session);
+            sendPlayerField(game, dto.getPlayerNr(), session);
+            sendOpponentPlayerField(game, dto.getPlayerNr(), session);
+        }
+        else{
+            // update other player
+            updateOtherPlayerAfterFireShot(game, session, shottype, dto);
+        }
+    }
 
     private void updateOtherPlayerAfterFireShot(Game game, Session session, ShotType shottype, CommunicatorWebSocketDTO dto){
         for(Session s: game.getSessions()){
@@ -128,7 +126,7 @@ public class ServerLogicHandler {
         }
     }
 
-    public void notifyWhenReady(SeaBattleGame game, int playerNr, Session session) {
+    public void notifyWhenReady(Game game, int playerNr, Session session) {
         if(!game.notifyWhenReady(playerNr)){
             messageSender.sendPlayerNotReady(session, playerNr);
             return;
@@ -169,24 +167,24 @@ public class ServerLogicHandler {
         messageSender.sendPlayerReady(session, playerNr);
     }
 
-    public void sendPlayerField(SeaBattleGame game, int playerNr, Session sess){
-        Tile[][] tiles = game.getPlayer(playerNr).getTiles();
-        TileDTO[][] tileDTO = makePlayerFieldDTO(tiles);
+    public void sendPlayerField(Game game, int playerNr, Session sess){
+        Square[][] squares = game.getPlayer(playerNr).getSquares();
+        TileDTO[][] tileDTO = makePlayerFieldDTO(squares);
         messageSender.showPlayerField(sess, tileDTO, playerNr);
     }
 
-    public void sendOpponentPlayerField(SeaBattleGame game, int playerNr, Session sess){
-        Tile[][] tiles = game.getPlayer(playerNr).getOpponentTiles();
-        TileDTO[][] tileDTO = makePlayerFieldDTO(tiles);
+    public void sendOpponentPlayerField(Game game, int playerNr, Session sess){
+        Square[][] squares = game.getPlayer(playerNr).getOpponentSquares();
+        TileDTO[][] tileDTO = makePlayerFieldDTO(squares);
         messageSender.showOpponentField(sess, tileDTO, playerNr);
     }
 
-    public TileDTO[][] makePlayerFieldDTO(Tile[][] tiles){
+    public TileDTO[][] makePlayerFieldDTO(Square[][] squares){
         TileDTO[][] tileDTO = new TileDTO[10][10];
         for(int x  = 0; x < 10; x++){
             for(int y  = 0; y < 10; y++){
-                Tile tile = tiles[x][y];
-                tileDTO[x][y] = new TileDTO(tile.getTileState(), tile.getX(), tile.getY(), tile.isContainsShip());
+                Square square = squares[x][y];
+                tileDTO[x][y] = new TileDTO(square.getSquareState(), square.getX(), square.getY(), square.isContainsShip());
             }
         }
         return tileDTO;

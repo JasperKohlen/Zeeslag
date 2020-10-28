@@ -19,8 +19,8 @@ public class ShipManager {
 
     public Ship removeShip(Position pos) {
         for (Ship s : getShips()) {
-            for (Position p : s.getPositions()) {
-                if (p.getX() == pos.getX() && p.getY() == pos.getY()) {
+            for (Square square : s.getSquares()) {
+                if (square.getX() == pos.getX() && square.getY() == pos.getY()) {
                     allShips.remove(s);
                     return s;
                 }
@@ -35,8 +35,8 @@ public class ShipManager {
 
     public boolean checkIfOverlap(int x, int y) {
         for (Ship ship: allShips) {
-            for (Position pos: ship.getPositions()) {
-                if(pos.getX() == x && pos.getY() == y){
+            for (Square square: ship.getSquares()) {
+                if(square.getX() == x && square.getY() == y){
                     return true;
                 }
             }
@@ -45,10 +45,10 @@ public class ShipManager {
     }
 
     public boolean checkIfShipOverlap(Ship ship) {
-        for (Position pos: ship.getPositions()) {
+        for (Square square: ship.getSquares()) {
             for (Ship ship2: allShips) {
-                for (Position pos2: ship2.getPositions()) {
-                    if(pos.getX() == pos2.getX() && pos.getY() == pos2.getY()){
+                for (Square s: ship2.getSquares()) {
+                    if(square.getX() == s.getX() && square.getY() == s.getY()){
                         return true;
                     }
                 }
@@ -58,8 +58,8 @@ public class ShipManager {
     }
 
     public boolean isInGrid(Ship ship) {
-        for(Position pos: ship.getPositions()) {
-            if(pos.getX() > 9 || pos.getY() > 9) {
+        for(Square s: ship.getSquares()) {
+            if(s.getX() > 9 || s.getY() > 9) {
                 return false;
             }
         }
@@ -80,10 +80,5 @@ public class ShipManager {
             return true;
         }
         return false;
-    }
-
-
-    public int getPlayerNumber(Player player) {
-        return player.playerNr;
     }
 }

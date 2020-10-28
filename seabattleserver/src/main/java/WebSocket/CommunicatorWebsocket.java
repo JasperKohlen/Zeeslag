@@ -1,7 +1,6 @@
 package WebSocket;
 
 import Models.Game;
-import Models.Ship;
 import Models.ShipManager;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;

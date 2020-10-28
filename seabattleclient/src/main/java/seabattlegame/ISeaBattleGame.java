@@ -4,6 +4,7 @@
 package seabattlegame;
 
 import enums.ShipType;
+import enums.ShotType;
 import seabattlegui.ISeaBattleGUI;
 
 /**
@@ -112,7 +113,7 @@ public interface ISeaBattleGame {
      * @param posX     x-coordinate of square
      * @param posY     y-coordinate of square
      */
-    public void fireShot(int playerNr, int posX, int posY);
+    public ShotType fireShot(int playerNr, int posX, int posY);
 
     /**
      * Start a new game. Remove all ships and unregister the player.

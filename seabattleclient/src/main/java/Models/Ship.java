@@ -1,75 +1,116 @@
 package Models;
 
 import enums.ShipType;
+import enums.SquareState;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Ship {
-    private ShipType shipType;
-    private int xBow;
-    private int yBow;
+
+    private ShipType type;
+    private int x;
+    private int y;
     private boolean horizontal;
-    private List<Position> positions;
+    private int count = 0;
+    private int length = 0;
+    private List<Square> squares;
+    private boolean isPlaced;
 
-    public Ship(ShipType _shipType, int X, int Y, boolean _horizontal) {
-        shipType = _shipType;
-        xBow = X;
-        yBow = Y;
-        horizontal = _horizontal;
-        positions = new ArrayList<>();
+    public ShipType getType() {
+        return type;
     }
 
-    public ShipType getShipType() {
-        return shipType;
+    public int getCount() {
+        return count;
     }
 
-    public void setShipType(ShipType shipType) {
-        this.shipType = shipType;
+    public int getLength() {
+        return length;
     }
 
-    public int getxBow() {
-        return xBow;
+    public boolean getIsPlaced() { return isPlaced; }
+
+    public ShipType getShipType() { return type; }
+
+    public void setIsPlaced(boolean isPlaced, int x, int y, boolean horizontal) {
+        this.isPlaced = isPlaced;
+        this.x = x;
+        this.y = y;
+        this.horizontal = horizontal;
     }
 
-    public void setxBow(int xBow) {
-        this.xBow = xBow;
+    public int getX() {
+        return x;
     }
 
-    public int getyBow() {
-        return yBow;
-    }
-
-    public void setyBow(int yBow) {
-        this.yBow = yBow;
+    public int getY() {
+        return y;
     }
 
     public boolean isHorizontal() {
         return horizontal;
     }
 
-    public void setHorizontal(boolean horizontal) {
+    public List<Square> getSquares() {
+        return squares;
+    }
+
+    public Ship(ShipType type) {
+        this.type = type;
+        this.squares = new ArrayList<Square>();
+    }
+
+    public Ship(ShipType type, int bowX, int bowY, boolean horizontal) {
+        this.type = type;
+        this.x = bowX;
+        this.y = bowY;
         this.horizontal = horizontal;
     }
 
-    public List<Position> getPositions() {
-        return positions;
+    public void destroyCoordinate(int x, int y){
+        count++;
+        if(count == length){
+            destroyShip();
+            return;
+        }
+        for(Square s : squares){
+            if(s.getX() == x && s.getY() == y){
+                s.setSquareState(SquareState.SHOTHIT);
+            }
+        }
     }
 
-    public void setPositions(List<Position> positions) {
-        this.positions = positions;
+    private void destroyShip(){
+        for(Square s: squares){
+            s.setSquareState(SquareState.SHIPSUNK);
+        }
     }
 
-    public void addPositions() {
+    public boolean shipIsDestroyed(){
+        return squares.get(0).getSquareState() == SquareState.SHIPSUNK;
+    }
+
+    public void addSquare(Square square){
+        this.squares.add(square);
+        length++;
+    }
+
+    public void removeFromBoard(int x, int y){
+        squares.clear();
+        setIsPlaced(false, x, y, false);
+    }
+
+    public void addSquares() {
         if(horizontal) {
             for(int i = 0; i < this.getShipType().length; i++) {
-                Position pos1 = new Position(this.xBow + i, this.yBow);
-                this.positions.add(pos1);
+                Square s = new Square(SquareState.SHIP, this.x + i, this.y, true);
+                this.squares.add(s);
             }
         } else {
             for(int i = 0; i < this.getShipType().length; i++) {
-                Position pos1 = new Position(this.xBow, this.yBow + i);
-                this.positions.add(pos1);
+                Square s = new Square(SquareState.SHIP, this.x + i, this.y, true);
+                this.squares.add(s);
             }
         }
 

@@ -155,3 +155,7 @@
 2020-10-26 11:18:14,333 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Wait till Opponent has fired a shot
 2020-10-26 11:18:16,781 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Wait till Opponent has fired a shot
 2020-10-26 11:18:18,208 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Wait till Opponent has fired a shot
+2020-10-27 10:38:15,712 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-27 10:38:20,523 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-27 10:38:41,777 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Not all ships have been placed!
+2020-10-27 10:39:00,663 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
