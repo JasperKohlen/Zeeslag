@@ -170,3 +170,12 @@
 2020-10-28 15:40:58,661 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
 2020-10-28 15:41:11,991 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
 2020-10-28 15:42:13,240 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-28 16:55:04,774 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-28 16:55:15,941 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: Not a recognized websocket [websocketclient.CommunicatorWebSocketClient] does not extend @javax.websocket.ClientEndpoint or extend from javax.websocket.Endpoint
+2020-10-28 16:58:09,664 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-28 16:58:56,055 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: Not a recognized websocket [websocketclient.CommunicatorWebSocketClient] does not extend @javax.websocket.ClientEndpoint or extend from javax.websocket.Endpoint
+2020-10-28 16:59:03,957 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-28 17:03:49,704 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: Not a recognized websocket [websocketclient.CommunicatorWebSocketClient] does not extend @javax.websocket.ClientEndpoint or extend from javax.websocket.Endpoint
+2020-10-28 17:04:20,327 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-28 17:04:52,979 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-28 17:08:41,986 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: Not a recognized websocket [websocketclient.CommunicatorWebSocketClient] does not extend @javax.websocket.ClientEndpoint or extend from javax.websocket.Endpoint

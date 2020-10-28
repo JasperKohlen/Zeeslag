@@ -6,9 +6,17 @@
     <modules>
         <module>seabattleclient</module>
         <module>seabattleserver</module>
-        <module>seabattlerest</module>
         <module>SeaBattleShared</module>
+        <module>seabattlelogin</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>nl.fhict.s3</groupId>
+            <artifactId>SeaBattleShared</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
     <packaging>pom</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
