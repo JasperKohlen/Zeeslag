@@ -17,7 +17,7 @@ public class ShipManager {
         this.allShips.add(ship);
     }
 
-    public Ship removeShip(Position pos) {
+    public Ship removeShip(Square pos) {
         for (Ship s : getShips()) {
             for (Square square : s.getSquares()) {
                 if (square.getX() == pos.getX() && square.getY() == pos.getY()) {

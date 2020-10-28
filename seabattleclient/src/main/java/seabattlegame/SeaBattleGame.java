@@ -76,8 +76,8 @@ public class SeaBattleGame implements ISeaBattleGame {
 
     @Override
     public void removeShip(int playerNr, int posX, int posY) {
-        Position selectedPos = new Position(posX, posY);
-        Ship ship = manager.removeShip(selectedPos);
+        Square square = new Square(SquareState.SHIP, posX, posY, true);
+        Ship ship = manager.removeShip(square);
         if (ship != null) {
             for (int i = 0; i < ship.getShipType().length; i++) {
                 for (Square s: ship.getSquares()) {

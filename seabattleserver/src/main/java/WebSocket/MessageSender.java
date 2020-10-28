@@ -1,7 +1,7 @@
 package WebSocket;
 
+import Models.Game;
 import Models.Player;
-import Models.ShipManager;
 import com.google.gson.Gson;
 import enums.ShotType;
 import websocket.CommunicatorWebSocketDTO;
@@ -20,8 +20,8 @@ public class MessageSender {
         sess.getAsyncRemote().sendText(message);
     }
 
-    public void notifySinglePlayerUser(Session sess, ShipManager shipManager, Player player){
-        CommunicatorWebSocketDTO socketDTO = new CommunicatorWebSocketDTO(shipManager.getPlayerNumber(player), player.getName());
+    public void notifySinglePlayerUser(Session sess, Game game, Player player){
+        CommunicatorWebSocketDTO socketDTO = new CommunicatorWebSocketDTO(game.getPlayerNumber(player), player.getName());
         CommunicatorWebSocketMessage socketMessage = new CommunicatorWebSocketMessage(CommunicatorWebSocketMessageOperation.REGISTERACCOUNTRESPONSESINGLE, socketDTO);
         String message = gson.toJson(socketMessage, CommunicatorWebSocketMessage.class);
         sess.getAsyncRemote().sendText(message);

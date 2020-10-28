@@ -9,13 +9,14 @@ import websocket.CommunicatorWebSocketMessage;
 import websocket.CommunicatorWebSocketMessageOperation;
 
 import javax.websocket.*;
+import javax.websocket.server.ServerEndpoint;
 import java.util.ArrayList;
 import java.util.List;
 
+@ServerEndpoint(value="/websocketserver")
 public class CommunicatorWebsocket {
     private static final List<Session> sessions = new ArrayList<>();
     private static final List<Game> games = new ArrayList<>();
-    private ShipManager manager;
     private Gson gson = new Gson();
     ServerLogicHandler logicHandler = new ServerLogicHandler( this);
 

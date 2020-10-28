@@ -28,6 +28,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import seabattlegame.ISeaBattleGame;
 import seabattlegame.SeaBattleGame;
+import websocketclient.WebSocketClientEventHandler;
 
 
 /**
@@ -491,7 +492,7 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
         // When invoking methods of class SeaBattleGame an
         // UnsupportedOperationException will be thrown
         // TODO: IMPLEMENT CLASS SeaBattleGame.
-        game = new SeaBattleGame();
+        game = new SeaBattleGame(new WebSocketClientEventHandler(this));
     }
 
     /**

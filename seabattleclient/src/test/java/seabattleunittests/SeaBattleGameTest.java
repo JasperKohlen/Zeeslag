@@ -8,6 +8,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import seabattlegame.ISeaBattleGame;
 import seabattlegame.SeaBattleGame;
+import seabattlegui.SeaBattleApplication;
+import websocketclient.WebSocketClientEventHandler;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -29,14 +31,14 @@ class SeaBattleGameTest {
     @BeforeEach
     void setUp() {
 
-        // Create the Sea Battle game
-        game = new SeaBattleGame();
-
         // Create mock Sea Battle GUI for player
         applicationPlayer = new MockSeaBattleApplication();
 
         // Create mock Sea Battle GUI for opponent
         applicationOpponent = new MockSeaBattleApplication();
+
+        // Create the Sea Battle game
+        game = new SeaBattleGame(new WebSocketClientEventHandler(new SeaBattleApplication()));
     }
 
     @AfterEach
