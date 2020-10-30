@@ -3,8 +3,6 @@
  */
 package seabattlegui;
 
-import Models.Ship;
-import Models.ShipManager;
 import enums.ShipType;
 import enums.ShotType;
 import enums.SquareState;
@@ -29,7 +27,6 @@ import org.slf4j.LoggerFactory;
 import seabattlegame.ISeaBattleGame;
 import seabattlegame.SeaBattleGame;
 import websocketclient.WebSocketClientEventHandler;
-
 
 /**
  * Main application of the sea battle game.
@@ -497,7 +494,6 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
 
     /**
      * Set player number.
-     *
      * @param playerNr identification of player
      * @param name     player's name
      */
@@ -540,7 +536,6 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
     /**
      * Set the name of the opponent.
      * The opponent's name will be shown above the target area.
-     *
      * @param playerNr identification of player
      * @param name     opponent's name
      */
@@ -563,7 +558,6 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
 
     /**
      * Notification that the game has started.
-     *
      * @param playerNr identification of player
      */
     @Override
@@ -573,23 +567,54 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
             showMessage("ERROR: Wrong player number method notifyStartGame()");
             return;
         }
-
-        // Set playing mode and disable placing/removing of ships
         playingMode = true;
-        labelHorizontalVertical.setDisable(true);
-        radioHorizontal.setDisable(true);
-        radioVertical.setDisable(true);
-        buttonPlaceAllShips.setDisable(true);
-        buttonRemoveAllShips.setDisable(true);
-        buttonReadyToPlay.setDisable(true);
-        buttonStartNewGame.setDisable(true);
-        buttonPlaceAircraftCarrier.setDisable(true);
-        buttonPlaceBattleShip.setDisable(true);
-        buttonPlaceCruiser.setDisable(true);
-        buttonPlaceSubmarine.setDisable(true);
-        buttonPlaceMineSweeper.setDisable(true);
-        buttonRemoveShip.setDisable(true);
+
         showMessage("Start playing by selecting a square in " + opponentName + "\'s grid");
+    }
+
+
+    public void notifyStartGameMultiplayer(int playerNr, int startingPlayer) {
+        // Check identification of player
+        if (playerNr != this.playerNr) {
+            showMessage("ERROR: Wrong player number method notifyStartGame()");
+            return;
+        }
+        playerTurn = startingPlayer;
+
+        if(playerNr == startingPlayer){
+            // Set playing mode and disable placing/removing of ships
+            playingMode = true;
+            labelHorizontalVertical.setDisable(true);
+            radioHorizontal.setDisable(true);
+            radioVertical.setDisable(true);
+            buttonPlaceAllShips.setDisable(true);
+            buttonRemoveAllShips.setDisable(true);
+            buttonReadyToPlay.setDisable(true);
+            buttonStartNewGame.setDisable(true);
+            buttonPlaceAircraftCarrier.setDisable(true);
+            buttonPlaceBattleShip.setDisable(true);
+            buttonPlaceCruiser.setDisable(true);
+            buttonPlaceSubmarine.setDisable(true);
+            buttonPlaceMineSweeper.setDisable(true);
+            buttonRemoveShip.setDisable(true);
+            showMessage("Start playing by selecting a square in " + opponentName + "\'s grid");
+        }else{
+            playingMode = true;
+            labelHorizontalVertical.setDisable(true);
+            radioHorizontal.setDisable(true);
+            radioVertical.setDisable(true);
+            buttonPlaceAllShips.setDisable(true);
+            buttonRemoveAllShips.setDisable(true);
+            buttonReadyToPlay.setDisable(true);
+            buttonStartNewGame.setDisable(true);
+            buttonPlaceAircraftCarrier.setDisable(true);
+            buttonPlaceBattleShip.setDisable(true);
+            buttonPlaceCruiser.setDisable(true);
+            buttonPlaceSubmarine.setDisable(true);
+            buttonPlaceMineSweeper.setDisable(true);
+            buttonRemoveShip.setDisable(true);
+            showMessage("Game started, other player is first.");
+        }
     }
 
     /**
@@ -599,7 +624,6 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
      * HIT     - A ship was hit
      * SUNK    - A ship was sunk
      * ALLSUNK - All ships are sunk
-     *
      * @param playerNr identification of player
      * @param shotType result of shot fired by player
      */
@@ -627,7 +651,6 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
      * HIT     - A ship was hit
      * SUNK    - A ship was sunk
      * ALLSUNK - All ships are sunk
-     *
      * @param playerNr identification of player
      * @param shotType result of shot fired by opponent
      */
@@ -635,7 +658,7 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
     public void opponentFiresShot(int playerNr, ShotType shotType) {
         // Check identification of player
         if (playerNr != this.playerNr) {
-            showMessage("ERROR: Wrong player number method opponentFiresShot()");
+            //showMessage("ERROR: Wrong player number method opponentFiresShot()");
             return;
         }
         if (shotType.equals(ShotType.SUNK)) {
@@ -653,7 +676,6 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
     /**
      * Show state of a square in the ocean area.
      * The color of the square depends on the state of the square.
-     *
      * @param playerNr    identification of player
      * @param posX        x-position of square
      * @param posY        y-position of square
@@ -678,7 +700,6 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
     /**
      * Show state of a square in the target area.
      * The color of the square depends on the state of the square.
-     *
      * @param playerNr    identification of player
      * @param posX        x-position of square
      * @param posY        y-position of square
@@ -702,7 +723,6 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
 
     /**
      * Show error message.
-     *
      * @param playerNr     identification of player
      * @param errorMessage error message
      */
@@ -715,7 +735,6 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
     /**
      * Set the color of the square according to position type.
      * Setting the color will be performed by the JavaFX Application Thread.
-     *
      * @param square the square of which the color should be changed.
      * @param squareState position type to determine the color.
      */
@@ -786,9 +805,8 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
      * Notify that the player is ready to start the game.
      */
     private void notifyWhenReady() {
-        if(game.notifyWhenReady(playerNr)) {
-            notifyStartGame(playerNr);
-        }
+        // Notify that the player is ready is start the game.
+        game.notifyWhenReady(playerNr);
     }
 
     /**
@@ -808,50 +826,6 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
         buttonRegisterPlayer.setDisable(false);
     }
 
-    public void notifyStartGameMultiplayer(int playerNr, int startingPlayer) {
-        // Check identification of player
-        if (playerNr != this.playerNr) {
-            showMessage("ERROR: Wrong player number method notifyStartGame()");
-            return;
-        }
-        playerTurn = startingPlayer;
-
-        if(playerNr == startingPlayer){
-            // Set playing mode and disable placing/removing of ships
-            playingMode = true;
-            labelHorizontalVertical.setDisable(true);
-            radioHorizontal.setDisable(true);
-            radioVertical.setDisable(true);
-            buttonPlaceAllShips.setDisable(true);
-            buttonRemoveAllShips.setDisable(true);
-            buttonReadyToPlay.setDisable(true);
-            buttonStartNewGame.setDisable(true);
-            buttonPlaceAircraftCarrier.setDisable(true);
-            buttonPlaceBattleShip.setDisable(true);
-            buttonPlaceCruiser.setDisable(true);
-            buttonPlaceSubmarine.setDisable(true);
-            buttonPlaceMineSweeper.setDisable(true);
-            buttonRemoveShip.setDisable(true);
-            showMessage("Start playing by selecting a square in " + opponentName + "\'s grid");
-        }else{
-            playingMode = true;
-            labelHorizontalVertical.setDisable(true);
-            radioHorizontal.setDisable(true);
-            radioVertical.setDisable(true);
-            buttonPlaceAllShips.setDisable(true);
-            buttonRemoveAllShips.setDisable(true);
-            buttonReadyToPlay.setDisable(true);
-            buttonStartNewGame.setDisable(true);
-            buttonPlaceAircraftCarrier.setDisable(true);
-            buttonPlaceBattleShip.setDisable(true);
-            buttonPlaceCruiser.setDisable(true);
-            buttonPlaceSubmarine.setDisable(true);
-            buttonPlaceMineSweeper.setDisable(true);
-            buttonRemoveShip.setDisable(true);
-            showMessage("Game started, other player is first.");
-        }
-    }
-
     /**
      * Place a ship of a certain ship type. The bow of the ship will
      * be placed at the selected square in the ocean area. The stern is
@@ -859,7 +833,6 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
      * horizontally and below of the bow when the ship should be placed
      * vertically. The exact position of the stern depends on the size
      * of the ship.
-     *
      * @param shipType   type of the ship to be placed
      * @param horizontal indicates whether ship should be placed horizontally or
      *                   vertically.
@@ -946,7 +919,6 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
      * When not in playing mode: the square that was selected before will
      * become light blue and the the selected square will become yellow.
      * A message will be shown when in playing mode.
-     *
      * @param event mouse event
      * @param x     x-coordinate of selected square
      * @param y     y-coordinate of selected square

@@ -136,6 +136,9 @@ public class PlayingField {
                     if(square.getX() == x && square.getY() == y){
                         if(shipIsSunk(s)){
                             changeShipToSunkenState(s);
+                            if(allShipsSunk()) {
+                                squares[x][y].setSquareState(SquareState.ALLSUNK);
+                            }
                         }
                     }
                 }
@@ -155,6 +158,17 @@ public class PlayingField {
             }
         }
 
+        return true;
+    }
+
+    private boolean allShipsSunk() {
+        for(Ship s: ships) {
+            for(Square square : s.getSquares()){
+                if(square.getSquareState() == SquareState.SHIP){
+                    return false;
+                }
+            }
+        }
         return true;
     }
 

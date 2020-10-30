@@ -143,6 +143,8 @@ public class Player {
                 return getShotType();
             case SHOTHIT:
                 return ShotType.HIT;
+            case ALLSUNK:
+                return ShotType.ALLSUNK;
             default:
                 return ShotType.MISSED;
         }

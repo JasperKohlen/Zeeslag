@@ -90,7 +90,7 @@ public interface ISeaBattleGame {
      *
      * @param playerNr identification of player who is ready to play the game
      */
-    public boolean notifyWhenReady(int playerNr);
+    public void notifyWhenReady(int playerNr);
 
     /**
      * Fire a shot at the opponent's square with given coordinates.
@@ -113,7 +113,7 @@ public interface ISeaBattleGame {
      * @param posX     x-coordinate of square
      * @param posY     y-coordinate of square
      */
-    public ShotType fireShot(int playerNr, int posX, int posY);
+    public void fireShot(int playerNr, int posX, int posY);
 
     /**
      * Start a new game. Remove all ships and unregister the player.
@@ -129,6 +129,4 @@ public interface ISeaBattleGame {
     public void startNewGame(int playerNr);
 
     public boolean checkIfOnSquare(int x, int y);
-
-    public boolean checkIfOpponentReady(int playerNr);
 }

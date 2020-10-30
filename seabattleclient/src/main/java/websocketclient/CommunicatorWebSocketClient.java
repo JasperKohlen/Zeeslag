@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+@ClientEndpoint
 public class CommunicatorWebSocketClient extends Communicator{
     private SeaBattleApplication seaBattleApplication;
     private static CommunicatorWebSocketClient instance = null;
@@ -141,7 +142,7 @@ public class CommunicatorWebSocketClient extends Communicator{
                     }
                 }
                 break;
-            case STARTGAME:
+            case STARTGAMESINGLEPLAYER:
                 seaBattleApplication.notifyStartGame(dto.getPlayerNr());
                 break;
             case SHOTFIRERESPONSE:

@@ -179,3 +179,269 @@
 2020-10-28 17:04:20,327 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
 2020-10-28 17:04:52,979 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
 2020-10-28 17:08:41,986 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: Not a recognized websocket [websocketclient.CommunicatorWebSocketClient] does not extend @javax.websocket.ClientEndpoint or extend from javax.websocket.Endpoint
+2020-10-29 14:38:01,226 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 14:40:31,049 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 14:40:37,077 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: Not a recognized websocket [websocketclient.CommunicatorWebSocketClient] does not extend @javax.websocket.ClientEndpoint or extend from javax.websocket.Endpoint
+2020-10-29 14:41:50,230 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 14:42:13,708 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: Not a recognized websocket [websocketclient.CommunicatorWebSocketClient] does not extend @javax.websocket.ClientEndpoint or extend from javax.websocket.Endpoint
+2020-10-29 14:42:16,913 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 14:45:31,104 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: Not a recognized websocket [websocketclient.CommunicatorWebSocketClient] does not extend @javax.websocket.ClientEndpoint or extend from javax.websocket.Endpoint
+2020-10-29 14:45:33,729 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 14:52:50,614 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 15:03:58,791 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 15:04:20,246 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: Not a recognized websocket [websocketclient.CommunicatorWebSocketClient] does not extend @javax.websocket.ClientEndpoint or extend from javax.websocket.Endpoint
+2020-10-29 15:10:09,479 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 15:10:17,002 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: Not a recognized websocket [websocketclient.CommunicatorWebSocketClient] does not extend @javax.websocket.ClientEndpoint or extend from javax.websocket.Endpoint
+2020-10-29 15:11:10,394 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 15:11:17,108 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: Not a recognized websocket [websocketclient.CommunicatorWebSocketClient] does not extend @javax.websocket.ClientEndpoint or extend from javax.websocket.Endpoint
+2020-10-29 15:12:05,832 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 15:12:13,413 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: Not a recognized websocket [websocketclient.CommunicatorWebSocketClient] does not extend @javax.websocket.ClientEndpoint or extend from javax.websocket.Endpoint
+2020-10-29 15:15:10,772 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 15:15:20,086 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: Unable to make field private websocket.CommunicatorWebSocketMessageOperation websocket.CommunicatorWebSocketMessage.operation accessible: module SeaBattleShared does not "opens websocket" to module gson
+2020-10-29 15:17:01,439 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 15:17:07,929 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: null
+2020-10-29 15:17:41,519 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 15:18:35,184 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: null
+2020-10-29 15:18:37,792 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 15:21:53,160 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: null
+2020-10-29 15:21:55,908 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 15:26:44,612 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: null
+2020-10-29 15:26:47,418 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 15:34:30,970 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 15:34:39,563 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: null
+2020-10-29 15:54:38,016 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 15:54:57,436 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: null
+2020-10-29 16:30:43,328 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 16:30:53,364 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: null
+2020-10-29 16:57:22,825 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 16:57:46,302 [WebSocketClient@1771522313-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for nieuwwachtwoord - Player nieuwwachtwoord registered
+2020-10-29 16:57:46,305 [WebSocketClient@1771522313-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for nieuwwachtwoord - Player nieuwwachtwoord registered
+2020-10-29 16:57:46,305 [WebSocketClient@1771522313-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for nieuwwachtwoord - Your opponent is cpu
+2020-10-29 16:59:49,254 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 17:00:02,373 [JavaFX Application Thread] [ERROR] seabattlegui.SeaBattleApplication - Register Player error: null
+2020-10-29 17:00:51,467 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-29 17:01:15,756 [WebSocketClient@587042507-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi123koenkertrottoirwasmachine - Player hoi123koenkertrottoirwasmachine registered
+2020-10-29 17:01:15,760 [WebSocketClient@587042507-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi123koenkertrottoirwasmachine - Player hoi123koenkertrottoirwasmachine registered
+2020-10-29 17:01:15,761 [WebSocketClient@587042507-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi123koenkertrottoirwasmachine - Your opponent is cpu
+2020-10-29 17:01:24,499 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi123koenkertrottoirwasmachine - Select square in hoi123koenkertrottoirwasmachine's grid to place ships
+2020-10-30 12:08:34,437 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 12:08:47,947 [WebSocketClient@924994441-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for JesseOosterwijk - Player JesseOosterwijk registered
+2020-10-30 12:08:47,954 [WebSocketClient@924994441-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for JesseOosterwijk - Player JesseOosterwijk registered
+2020-10-30 12:08:47,954 [WebSocketClient@924994441-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for JesseOosterwijk - Your opponent is cpu
+2020-10-30 12:08:55,131 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for JesseOosterwijk - Select square in JesseOosterwijk's grid to place ship
+2020-10-30 12:09:13,807 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for JesseOosterwijk - Select square in JesseOosterwijk's grid to place ships
+2020-10-30 12:09:25,575 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for JesseOosterwijk - Select square in JesseOosterwijk's grid to place ships
+2020-10-30 12:09:32,494 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for JesseOosterwijk - Select square in JesseOosterwijk's grid to place ships
+2020-10-30 12:09:33,758 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for JesseOosterwijk - Select square in JesseOosterwijk's grid to place ships
+2020-10-30 12:09:49,511 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for JesseOosterwijk - Select square in JesseOosterwijk's grid to place ships
+2020-10-30 12:10:51,802 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 12:11:14,022 [WebSocketClient@743654371-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie123 - Player henkie123 registered
+2020-10-30 12:11:14,027 [WebSocketClient@743654371-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie123 - Player henkie123 registered
+2020-10-30 12:11:14,027 [WebSocketClient@743654371-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie123 - Your opponent is cpu
+2020-10-30 12:13:59,870 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie123 - Select square in henkie123's grid to place ships
+2020-10-30 12:14:02,268 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie123 - Select square in henkie123's grid to place ships
+2020-10-30 12:14:03,301 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie123 - Select square in henkie123's grid to place ships
+2020-10-30 12:17:50,804 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 12:17:55,539 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 12:18:14,101 [WebSocketClient@596400413-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Player newopponent registered
+2020-10-30 12:18:16,000 [WebSocketClient@596400413-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Your opponent is newopponent2
+2020-10-30 12:18:16,003 [WebSocketClient@2079454627-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Player newopponent2 registered
+2020-10-30 12:18:16,057 [WebSocketClient@2079454627-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Your opponent is newopponent
+2020-10-30 12:18:27,200 [WebSocketClient@2079454627-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Please wait for other player.
+2020-10-30 12:18:29,899 [WebSocketClient@596400413-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Start playing by selecting a square in newopponent2's grid
+2020-10-30 12:18:29,899 [WebSocketClient@2079454627-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Game started, other player is first.
+2020-10-30 12:18:29,899 [WebSocketClient@596400413-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Please wait for other player.
+2020-10-30 12:18:34,504 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:18:42,173 [WebSocketClient@596400413-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Ship of newopponent2 is sunk
+2020-10-30 12:18:51,053 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Wait till newopponent2 has fired a shot
+2020-10-30 12:18:53,112 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Wait till newopponent2 has fired a shot
+2020-10-30 12:19:02,577 [WebSocketClient@2079454627-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Ship of newopponent is sunk
+2020-10-30 12:19:05,564 [WebSocketClient@2079454627-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Ship of newopponent is sunk
+2020-10-30 12:19:08,921 [WebSocketClient@2079454627-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Ship of newopponent is sunk
+2020-10-30 12:19:11,965 [WebSocketClient@2079454627-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Ship of newopponent is sunk
+2020-10-30 12:19:21,869 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:19:23,897 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:19:25,537 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:19:28,691 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Wait till newopponent2 has fired a shot
+2020-10-30 12:19:30,482 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:19:31,789 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Wait till newopponent2 has fired a shot
+2020-10-30 12:19:33,542 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:19:37,746 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:19:40,335 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Wait till newopponent2 has fired a shot
+2020-10-30 12:19:54,967 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Select square in newopponent's grid to fire
+2020-10-30 12:19:57,588 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:19:59,297 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:20:00,837 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:20:02,049 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:20:03,207 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:20:04,105 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:20:04,804 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:20:05,627 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:20:06,559 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:20:07,391 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:20:08,462 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:20:09,345 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent2 - Wait till newopponent has fired a shot
+2020-10-30 12:20:10,702 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Wait till newopponent2 has fired a shot
+2020-10-30 12:20:21,965 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Wait till newopponent2 has fired a shot
+2020-10-30 12:20:24,448 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Wait till newopponent2 has fired a shot
+2020-10-30 12:20:26,027 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Wait till newopponent2 has fired a shot
+2020-10-30 12:20:28,354 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Wait till newopponent2 has fired a shot
+2020-10-30 12:20:29,619 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newopponent - Wait till newopponent2 has fired a shot
+2020-10-30 12:20:46,532 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 12:20:53,139 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 12:21:08,654 [WebSocketClient@1624963923-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi - Player hoi registered
+2020-10-30 12:21:10,085 [WebSocketClient@1624963923-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi - Your opponent is hoi2
+2020-10-30 12:21:10,089 [WebSocketClient@2016924827-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi2 - Player hoi2 registered
+2020-10-30 12:21:10,094 [WebSocketClient@2016924827-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi2 - Your opponent is hoi
+2020-10-30 12:21:15,121 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi - Select square in hoi's grid to place ships
+2020-10-30 12:21:22,674 [WebSocketClient@1624963923-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi - Please wait for other player.
+2020-10-30 12:21:24,436 [WebSocketClient@1624963923-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi - Start playing by selecting a square in hoi2's grid
+2020-10-30 12:21:24,436 [WebSocketClient@2016924827-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi2 - Game started, other player is first.
+2020-10-30 12:21:24,437 [WebSocketClient@2016924827-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi2 - Please wait for other player.
+2020-10-30 12:21:54,772 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi - Wait till hoi2 has fired a shot
+2020-10-30 12:22:06,925 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi2 - Wait till hoi has fired a shot
+2020-10-30 12:22:12,691 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi - Wait till hoi2 has fired a shot
+2020-10-30 12:22:15,322 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi2 - Wait till hoi has fired a shot
+2020-10-30 12:22:17,299 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi - Wait till hoi2 has fired a shot
+2020-10-30 12:22:19,771 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for hoi2 - Wait till hoi has fired a shot
+2020-10-30 13:06:25,361 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie123 - Select square in henkie123's grid to place ships
+2020-10-30 13:06:26,935 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie123 - Select square in henkie123's grid to place ships
+2020-10-30 13:06:28,410 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie123 - Select square in henkie123's grid to place ships
+2020-10-30 13:06:29,548 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for henkie123 - Select square in henkie123's grid to place ships
+2020-10-30 13:08:15,493 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 13:08:37,400 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 13:08:48,680 [WebSocketClient@928046151-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for lolololololoolooloolo - Player lolololololoolooloolo registered
+2020-10-30 13:08:48,683 [WebSocketClient@928046151-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for lolololololoolooloolo - Player lolololololoolooloolo registered
+2020-10-30 13:08:48,684 [WebSocketClient@928046151-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for lolololololoolooloolo - Your opponent is cpu
+2020-10-30 13:13:30,669 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 13:13:34,399 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 13:13:39,498 [WebSocketClient@1842563104-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test3 - Player test3 registered
+2020-10-30 13:13:46,167 [WebSocketClient@1842563104-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test3 - Your opponent is test4
+2020-10-30 13:13:46,172 [WebSocketClient@1572825870-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test4 - Player test4 registered
+2020-10-30 13:13:46,176 [WebSocketClient@1572825870-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test4 - Your opponent is test3
+2020-10-30 13:14:03,488 [WebSocketClient@1572825870-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test4 - Please wait for other player.
+2020-10-30 13:14:06,673 [WebSocketClient@1572825870-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test4 - Game started, other player is first.
+2020-10-30 13:14:06,673 [WebSocketClient@1842563104-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test3 - Start playing by selecting a square in test4's grid
+2020-10-30 13:14:06,674 [WebSocketClient@1842563104-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test3 - Please wait for other player.
+2020-10-30 13:14:20,843 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test4 - Wait till test3 has fired a shot
+2020-10-30 13:14:38,729 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test4 - Wait till test3 has fired a shot
+2020-10-30 13:14:48,000 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test3 - Wait till test4 has fired a shot
+2020-10-30 13:14:53,300 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test4 - Wait till test3 has fired a shot
+2020-10-30 13:14:58,450 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test3 - Wait till test4 has fired a shot
+2020-10-30 13:15:22,334 [WebSocketClient@1842563104-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test3 - Ship of test4 is sunk
+2020-10-30 13:15:30,078 [WebSocketClient@1842563104-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test3 - Ship of test4 is sunk
+2020-10-30 13:15:36,614 [WebSocketClient@1572825870-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test4 - Winner: test4.
+Press Start new game to continue
+2020-10-30 13:15:52,201 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test4 - Press Start new game
+2020-10-30 13:15:53,757 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for test4 - Press Start new game
+2020-10-30 13:16:14,810 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 13:16:18,352 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 13:16:22,168 [WebSocketClient@1413026432-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 132321123123 - Player 132321123123 registered
+2020-10-30 13:16:30,387 [WebSocketClient@1413026432-32] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 132321123123 - Your opponent is 123213213121322131231
+2020-10-30 13:16:30,449 [WebSocketClient@1272877643-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123213213121322131231 - Player 123213213121322131231 registered
+2020-10-30 13:16:30,492 [WebSocketClient@1272877643-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123213213121322131231 - Your opponent is 132321123123
+2020-10-30 13:16:45,448 [WebSocketClient@1413026432-32] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 132321123123 - Please wait for other player.
+2020-10-30 13:17:07,411 [WebSocketClient@1272877643-35] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123213213121322131231 - Game started, other player is first.
+2020-10-30 13:17:07,411 [WebSocketClient@1272877643-35] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123213213121322131231 - Please wait for other player.
+2020-10-30 13:18:34,831 [WebSocketClient@1413026432-35] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 132321123123 - Start playing by selecting a square in 123213213121322131231's grid
+2020-10-30 13:18:47,809 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 13:18:58,406 [WebSocketClient@41332954-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - Player singleplayertests registered
+2020-10-30 13:18:58,410 [WebSocketClient@41332954-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - Player singleplayertests registered
+2020-10-30 13:18:58,410 [WebSocketClient@41332954-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - Your opponent is cpu
+2020-10-30 13:19:04,889 [WebSocketClient@41332954-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - Start playing by selecting a square in cpu's grid
+2020-10-30 13:19:07,337 [WebSocketClient@41332954-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:19:11,158 [WebSocketClient@41332954-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:19:34,150 [WebSocketClient@41332954-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:19:35,785 [WebSocketClient@41332954-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:19:49,265 [WebSocketClient@41332954-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:20:05,672 [WebSocketClient@41332954-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:20:08,383 [WebSocketClient@41332954-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:20:10,068 [WebSocketClient@41332954-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:20:11,209 [WebSocketClient@41332954-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:20:12,188 [WebSocketClient@41332954-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:20:13,922 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - Wait till cpu has fired a shot
+2020-10-30 13:20:15,186 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - Wait till cpu has fired a shot
+2020-10-30 13:20:16,528 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - Wait till cpu has fired a shot
+2020-10-30 13:20:18,825 [WebSocketClient@41332954-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - Start playing by selecting a square in cpu's grid
+2020-10-30 13:20:20,492 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - Wait till cpu has fired a shot
+2020-10-30 13:20:22,117 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - Select square in cpu's grid to fire
+2020-10-30 13:20:25,072 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for singleplayertests - Wait till cpu has fired a shot
+2020-10-30 13:21:47,672 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 13:21:57,311 [WebSocketClient@747378883-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newtestsp - Player newtestsp registered
+2020-10-30 13:21:57,314 [WebSocketClient@747378883-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newtestsp - Player newtestsp registered
+2020-10-30 13:21:57,315 [WebSocketClient@747378883-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newtestsp - Your opponent is cpu
+2020-10-30 13:22:05,109 [WebSocketClient@747378883-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newtestsp - Start playing by selecting a square in cpu's grid
+2020-10-30 13:22:08,081 [WebSocketClient@747378883-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newtestsp - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:22:31,550 [WebSocketClient@747378883-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newtestsp - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:23:37,993 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 13:23:46,871 [WebSocketClient@1091230346-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newtestinggrounds - Player newtestinggrounds registered
+2020-10-30 13:23:46,875 [WebSocketClient@1091230346-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newtestinggrounds - Player newtestinggrounds registered
+2020-10-30 13:23:46,875 [WebSocketClient@1091230346-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newtestinggrounds - Your opponent is cpu
+2020-10-30 13:23:52,757 [WebSocketClient@1091230346-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newtestinggrounds - Start playing by selecting a square in cpu's grid
+2020-10-30 13:23:54,606 [WebSocketClient@1091230346-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newtestinggrounds - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:29:44,782 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for newtestinggrounds - Select square in cpu's grid to fire
+2020-10-30 13:29:54,721 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 13:30:06,981 [WebSocketClient@1882863619-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - Player testingagain registered
+2020-10-30 13:30:06,984 [WebSocketClient@1882863619-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - Player testingagain registered
+2020-10-30 13:30:06,985 [WebSocketClient@1882863619-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - Your opponent is cpu
+2020-10-30 13:30:11,212 [WebSocketClient@1882863619-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - Start playing by selecting a square in cpu's grid
+2020-10-30 13:30:13,006 [WebSocketClient@1882863619-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:30:33,536 [WebSocketClient@1882863619-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:30:36,388 [WebSocketClient@1882863619-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:30:38,364 [WebSocketClient@1882863619-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:30:40,742 [WebSocketClient@1882863619-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:30:42,276 [WebSocketClient@1882863619-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - Ship of cpu is sunk
+2020-10-30 13:30:42,276 [WebSocketClient@1882863619-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:30:47,428 [WebSocketClient@1882863619-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:30:49,309 [WebSocketClient@1882863619-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:30:51,894 [WebSocketClient@1882863619-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:30:53,589 [WebSocketClient@1882863619-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - ERROR: Wrong player number method opponentFiresShot()
+2020-10-30 13:30:55,928 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - Wait till cpu has fired a shot
+2020-10-30 13:30:58,498 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingagain - Wait till cpu has fired a shot
+2020-10-30 13:31:08,239 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 13:31:15,036 [WebSocketClient@432888326-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Player ahhhhh registered
+2020-10-30 13:31:15,040 [WebSocketClient@432888326-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Player ahhhhh registered
+2020-10-30 13:31:15,040 [WebSocketClient@432888326-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Your opponent is cpu
+2020-10-30 13:31:23,854 [WebSocketClient@432888326-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Start playing by selecting a square in cpu's grid
+2020-10-30 13:31:33,625 [WebSocketClient@432888326-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Ship of cpu is sunk
+2020-10-30 13:31:37,904 [WebSocketClient@432888326-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Ship of cpu is sunk
+2020-10-30 13:31:45,381 [WebSocketClient@432888326-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Ship of cpu is sunk
+2020-10-30 13:31:47,016 [WebSocketClient@432888326-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Ship of cpu is sunk
+2020-10-30 13:32:24,168 [WebSocketClient@432888326-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Ship of cpu is sunk
+2020-10-30 13:32:54,636 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Wait till cpu has fired a shot
+2020-10-30 13:33:01,910 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Select square in ahhhhh's grid to remove ship
+2020-10-30 13:33:03,642 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Select square in cpu's grid to fire
+2020-10-30 13:33:07,573 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Select square in cpu's grid to fire
+2020-10-30 13:33:09,387 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Wait till cpu has fired a shot
+2020-10-30 13:33:10,808 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Wait till cpu has fired a shot
+2020-10-30 13:33:12,310 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ahhhhh - Wait till cpu has fired a shot
+2020-10-30 13:34:50,500 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 13:34:59,221 [WebSocketClient@164755753-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingifspworks - Player testingifspworks registered
+2020-10-30 13:34:59,236 [WebSocketClient@164755753-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingifspworks - Player testingifspworks registered
+2020-10-30 13:34:59,236 [WebSocketClient@164755753-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingifspworks - Your opponent is cpu
+2020-10-30 13:35:08,693 [WebSocketClient@164755753-35] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingifspworks - Start playing by selecting a square in cpu's grid
+2020-10-30 13:36:30,340 [WebSocketClient@164755753-35] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingifspworks - Ship of cpu is sunk
+2020-10-30 13:36:54,629 [WebSocketClient@164755753-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingifspworks - Ship of cpu is sunk
+2020-10-30 13:38:07,586 [WebSocketClient@164755753-36] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingifspworks - Ship of cpu is sunk
+2020-10-30 13:39:18,219 [WebSocketClient@164755753-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingifspworks - Ship of cpu is sunk
+2020-10-30 13:40:03,494 [WebSocketClient@164755753-36] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for testingifspworks - Ship of cpu is sunk
+2020-10-30 13:50:45,616 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 13:50:58,046 [WebSocketClient@1246755271-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Player playing vs cpu registered
+2020-10-30 13:50:58,049 [WebSocketClient@1246755271-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Player playing vs cpu registered
+2020-10-30 13:50:58,050 [WebSocketClient@1246755271-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Your opponent is cpu
+2020-10-30 13:51:03,613 [WebSocketClient@1246755271-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Start playing by selecting a square in cpu's grid
+2020-10-30 13:51:17,158 [WebSocketClient@1246755271-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Ship of cpu is sunk
+2020-10-30 13:51:18,665 [WebSocketClient@1246755271-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Ship of cpu is sunk
+2020-10-30 13:51:24,663 [WebSocketClient@1246755271-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Ship of cpu is sunk
+2020-10-30 13:51:37,635 [WebSocketClient@1246755271-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Ship of cpu is sunk
+2020-10-30 13:51:54,007 [WebSocketClient@1246755271-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Winner: playing vs cpu.
+Press Start new game to continue
+2020-10-30 13:52:01,351 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Press Start new game
+2020-10-30 13:52:05,231 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Press Start new game
+2020-10-30 13:52:06,265 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Press Start new game
+2020-10-30 13:52:07,110 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Select square in cpu's grid to fire
+2020-10-30 13:52:14,200 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Select square in cpu's grid to fire
+2020-10-30 13:52:18,692 [WebSocketClient@1246755271-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Start playing by selecting a square in cpu's grid
+2020-10-30 13:52:21,048 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Press Start new game
+2020-10-30 13:52:22,376 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Press Start new game
+2020-10-30 13:52:26,615 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Select square in cpu's grid to fire

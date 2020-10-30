@@ -9,5 +9,6 @@ public enum SquareState {
     SHIP,         // A ship is positioned at this square
     SHOTMISSED,   // A shot was fired at this square, but no hit
     SHOTHIT,      // A shot was fired at this square and a ship was hit
-    SHIPSUNK;     // A shot was fired at this square and a ship is sunk
+    SHIPSUNK,     // A shot was fired at this square and a ship is sunk
+    ALLSUNK;
 }

@@ -1,7 +1,6 @@
 package WebSocket;
 
 import Models.Game;
-import Models.ShipManager;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import websocket.CommunicatorWebSocketDTO;
@@ -13,7 +12,7 @@ import javax.websocket.server.ServerEndpoint;
 import java.util.ArrayList;
 import java.util.List;
 
-@ServerEndpoint(value="/websocketserver")
+@ServerEndpoint(value="/websocketserver/")
 public class CommunicatorWebsocket {
     private static final List<Session> sessions = new ArrayList<>();
     private static final List<Game> games = new ArrayList<>();
