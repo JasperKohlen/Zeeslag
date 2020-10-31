@@ -189,4 +189,9 @@ public class ServerLogicHandler {
         }
         return squareDTO;
     }
+
+    public void startNewGame(Game game, int playerNr, Session session) {
+        game.startNewGame(playerNr);
+        sendPlayerField(game, playerNr, session);
+    }
 }
