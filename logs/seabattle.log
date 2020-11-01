@@ -445,3 +445,27 @@ Press Start new game to continue
 2020-10-30 13:52:21,048 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Press Start new game
 2020-10-30 13:52:22,376 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Press Start new game
 2020-10-30 13:52:26,615 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Select square in cpu's grid to fire
+2020-10-30 20:38:35,019 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 20:39:06,297 [WebSocketClient@1975527158-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasperkohlenkohlen - Player jasperkohlenkohlen registered
+2020-10-30 20:39:06,302 [WebSocketClient@1975527158-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasperkohlenkohlen - Player jasperkohlenkohlen registered
+2020-10-30 20:39:06,303 [WebSocketClient@1975527158-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasperkohlenkohlen - Your opponent is cpu
+2020-10-30 20:39:23,125 [WebSocketClient@1975527158-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasperkohlenkohlen - Start playing by selecting a square in cpu's grid
+2020-10-30 20:39:34,403 [WebSocketClient@1975527158-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasperkohlenkohlen - Ship of cpu is sunk
+2020-10-30 20:39:46,874 [WebSocketClient@1975527158-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasperkohlenkohlen - Ship of cpu is sunk
+2020-10-30 20:39:55,685 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasperkohlenkohlen - Wait till cpu has fired a shot
+2020-10-30 20:39:57,367 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasperkohlenkohlen - Wait till cpu has fired a shot
+2020-10-30 20:39:58,440 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasperkohlenkohlen - Wait till cpu has fired a shot
+2020-10-30 20:40:01,653 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasperkohlenkohlen - Wait till cpu has fired a shot
+2020-10-30 20:40:09,887 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasperkohlenkohlen - Wait till cpu has fired a shot
+2020-10-30 20:40:11,954 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasperkohlenkohlen - Wait till cpu has fired a shot
+2020-10-30 20:40:19,872 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 20:40:25,957 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-30 20:40:35,569 [WebSocketClient@646744843-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for player1 - Player player1 registered
+2020-10-30 20:40:46,365 [WebSocketClient@646744843-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for player1 - Your opponent is player2
+2020-10-30 20:40:46,370 [WebSocketClient@2133510337-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for player2 - Player player2 registered
+2020-10-30 20:40:46,375 [WebSocketClient@2133510337-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for player2 - Your opponent is player1
+2020-10-30 20:41:15,289 [WebSocketClient@646744843-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for player1 - Please wait for other player.
+2020-10-30 20:41:26,990 [WebSocketClient@646744843-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for player1 - Start playing by selecting a square in player2's grid
+2020-10-30 20:41:26,990 [WebSocketClient@2133510337-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for player2 - Game started, other player is first.
+2020-10-30 20:41:26,990 [WebSocketClient@2133510337-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for player2 - Please wait for other player.
+2020-10-30 20:41:44,321 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for player1 - Wait till player2 has fired a shot
