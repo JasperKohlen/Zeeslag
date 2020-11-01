@@ -109,6 +109,7 @@ public class Player {
         for(Ship s: shipList)
             if(s.getX() == bowX && s.getY() == bowY){
                 playfield.removeShip(s);
+
                 s.setIsPlaced(false, 0, 0,  false);
             }
     }
