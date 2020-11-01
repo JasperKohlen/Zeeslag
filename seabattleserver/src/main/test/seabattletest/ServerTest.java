@@ -18,19 +18,19 @@ public class ServerTest {
         game = new Game();
     }
 
-    @Test()
+    @Test
     void testRegisterPlayerNameNull() {
         Player player = new Player(null, false);
         assertThrows(IllegalArgumentException.class, () -> game.registerPlayer(player, true));
     }
 
-    @Test()
+    @Test
     void testRegisterPlayerNameEmpty() {
         Player player = new Player("", false);
         assertThrows(IllegalArgumentException.class, () -> game.registerPlayer(player, true));
     }
 
-    @Test() // expected=IllegalArgumentException.class
+    @Test
     void testRegisterPlayerNumberOfPlayerExceedsSinglePlayerMode(){
         Player player = new Player("henk", true);
         Player player2 = new Player("henk", true);
@@ -39,7 +39,13 @@ public class ServerTest {
         assertThrows(IllegalArgumentException.class, () -> game.registerPlayer(player2, true));
     }
 
-    @Test()
+    @Test
+    void testRegisterPlayerCorrectly() {
+        Player player = new Player("henk", true);
+        assertDoesNotThrow(() -> game.registerPlayer(player, true));
+    }
+
+    @Test
     public void testPlaceShipsAutomatically() {
         // Register player in single-player mode
         Player player = new Player("Henk", false);
@@ -50,7 +56,7 @@ public class ServerTest {
         game.placeShipsAutomatically(playerNr);
 
         // Count number of squares where ships are placed in player's application
-        int expectedResult = 5 + 4 + 3 + 3 + 2;
+        int expectedResult = ShipType.AIRCRAFTCARRIER.length + ShipType.BATTLESHIP.length + ShipType.CRUISER.length + ShipType.SUBMARINE.length + ShipType.MINESWEEPER.length;
         int actualResult = 0;
 
         Square[][] squares = game.getPlayer(playerNr).getSquares();
@@ -66,32 +72,237 @@ public class ServerTest {
         assertEquals(expectedResult,actualResult, "Wrong number of squares where ships are placed");
     }
 
-    @Test()
-    void removeShipPlayerNull(){
+    @Test
+    void testPlaceAircraftCarrierCorrectly() {
+        Player player = new Player("Henk", false);
+        game.registerPlayer(player, true);
+        game.placeShip(0, ShipType.AIRCRAFTCARRIER, 0, 0, true);
+
+        int expectedResult = ShipType.AIRCRAFTCARRIER.length;
+        int actualResult = 0;
+
+        Square[][] squares = game.getPlayer(0).getSquares();
+        for(int x = 0; x < 10; x++){
+            for(int y = 0; y < 10; y++)
+            {
+                if(squares[x][y].getSquareState() == SquareState.SHIP){
+                    actualResult++;
+                }
+            }
+        }
+
+        for(int i = 0; i < ShipType.AIRCRAFTCARRIER.length; i ++) {
+            assertEquals(SquareState.SHIP, squares[i][0].getSquareState());
+        }
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testPlaceBattleShipCorrectly() {
+        Player player = new Player("Henk", false);
+        game.registerPlayer(player, true);
+        game.placeShip(0, ShipType.BATTLESHIP, 0, 0, true);
+
+        int expectedResult = ShipType.BATTLESHIP.length;
+        int actualResult = 0;
+
+        Square[][] squares = game.getPlayer(0).getSquares();
+        for(int x = 0; x < 10; x++){
+            for(int y = 0; y < 10; y++)
+            {
+                if(squares[x][y].getSquareState() == SquareState.SHIP){
+                    actualResult++;
+                }
+            }
+        }
+
+        for(int i = 0; i < ShipType.BATTLESHIP.length; i ++) {
+            assertEquals(SquareState.SHIP, squares[i][0].getSquareState());
+        }
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testPlaceCruiserCorrectly() {
+        Player player = new Player("Henk", false);
+        game.registerPlayer(player, true);
+        game.placeShip(0, ShipType.CRUISER, 0, 0, true);
+
+        int expectedResult = ShipType.CRUISER.length;
+        int actualResult = 0;
+
+        Square[][] squares = game.getPlayer(0).getSquares();
+        for(int x = 0; x < 10; x++){
+            for(int y = 0; y < 10; y++)
+            {
+                if(squares[x][y].getSquareState() == SquareState.SHIP){
+                    actualResult++;
+                }
+            }
+        }
+
+        for(int i = 0; i < ShipType.CRUISER.length; i ++) {
+            assertEquals(SquareState.SHIP, squares[i][0].getSquareState());
+        }
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testPlaceSubmarineCorrectly() {
+        Player player = new Player("Henk", false);
+        game.registerPlayer(player, true);
+        game.placeShip(0, ShipType.SUBMARINE, 0, 0, true);
+
+        int expectedResult = ShipType.SUBMARINE.length;
+        int actualResult = 0;
+
+        Square[][] squares = game.getPlayer(0).getSquares();
+        for(int x = 0; x < 10; x++){
+            for(int y = 0; y < 10; y++)
+            {
+                if(squares[x][y].getSquareState() == SquareState.SHIP){
+                    actualResult++;
+                }
+            }
+        }
+
+        for(int i = 0; i < ShipType.SUBMARINE.length; i ++) {
+            assertEquals(SquareState.SHIP, squares[i][0].getSquareState());
+        }
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testPlaceMineSweeperCorrectly() {
+        Player player = new Player("Henk", false);
+        game.registerPlayer(player, true);
+        game.placeShip(0, ShipType.MINESWEEPER, 0, 0, true);
+
+        int expectedResult = ShipType.MINESWEEPER.length;
+        int actualResult = 0;
+
+        Square[][] squares = game.getPlayer(0).getSquares();
+        for(int x = 0; x < 10; x++){
+            for(int y = 0; y < 10; y++)
+            {
+                if(squares[x][y].getSquareState() == SquareState.SHIP){
+                    actualResult++;
+                }
+            }
+        }
+
+        for(int i = 0; i < ShipType.MINESWEEPER.length; i ++) {
+            assertEquals(SquareState.SHIP, squares[i][0].getSquareState());
+        }
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testPlaceMultipleShipsCorrectly() {
+        Player player = new Player("Henk", false);
+        game.registerPlayer(player, true);
+        game.placeShip(0, ShipType.MINESWEEPER, 0, 0, true);
+        game.placeShip(0, ShipType.CRUISER, 5, 5, true);
+
+        int expectedResult = ShipType.MINESWEEPER.length + ShipType.CRUISER.length;
+        int actualResult = 0;
+
+        Square[][] squares = game.getPlayer(0).getSquares();
+        for(int x = 0; x < 10; x++){
+            for(int y = 0; y < 10; y++)
+            {
+                if(squares[x][y].getSquareState() == SquareState.SHIP){
+                    actualResult++;
+                }
+            }
+        }
+
+        for(int i = 0; i < ShipType.MINESWEEPER.length; i ++) {
+            assertEquals(SquareState.SHIP, squares[i][0].getSquareState());
+        }
+        for(int i = 5; i < ShipType.CRUISER.length; i ++) {
+            assertEquals(SquareState.SHIP, squares[i][0].getSquareState());
+        }
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testPlaceShip_ShipTypeAlreadyPlaced() {
+        Player player = new Player("Henk", false);
+        game.registerPlayer(player, true);
+        game.placeShip(0, ShipType.MINESWEEPER, 0, 0, true);
+        game.placeShip(0, ShipType.MINESWEEPER, 5, 5, true);
+
+        int expectedResult = ShipType.MINESWEEPER.length;
+        int actualResult = 0;
+
+        Square[][] squares = game.getPlayer(0).getSquares();
+        for(int x = 0; x < 10; x++){
+            for(int y = 0; y < 10; y++)
+            {
+                if(squares[x][y].getSquareState() == SquareState.SHIP){
+                    actualResult++;
+                }
+            }
+        }
+
+        for(int i = 0; i < ShipType.MINESWEEPER.length; i ++) {
+            assertEquals(SquareState.SHIP, squares[i][0].getSquareState());
+        }
+        for(int i = 5; i < ShipType.MINESWEEPER.length; i ++) {
+            assertEquals(SquareState.SHIP, squares[i][0].getSquareState());
+        }
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testRemoveShipPlayerNull(){
         Player player = new Player("Henk", true);
         game.registerPlayer(player,true);
         game.placeShip(1, ShipType.AIRCRAFTCARRIER, 1, 1, true);
         assertThrows(IllegalArgumentException.class, () -> game.removeShip(-1, 1,1));
     }
 
-    @Test()
-    void removeShipXNull(){
+    @Test
+    void testRemoveShipXNull(){
         Player player = new Player("Henk", true);
         game.registerPlayer(player,true);
         game.placeShip(1, ShipType.AIRCRAFTCARRIER, 1, 1, true);
         assertThrows(IllegalArgumentException.class, () -> game.removeShip(1, -1,1));
     }
 
-    @Test()
-    void removeShipYIncorrect(){
+    @Test
+    void testRemoveShipYIncorrect(){
         Player player = new Player("Henk", true);
         game.registerPlayer(player,true);
         game.placeShip(1, ShipType.AIRCRAFTCARRIER, 1, 1, true);
         assertThrows(IllegalArgumentException.class, () -> game.removeShip(1, 1,-1));
     }
 
-    @Test()
-    void removeAllShips(){
+    @Test
+    void testRemoveShipCorrectly() {
+        Player player = new Player("Henk", false);
+        game.registerPlayer(player,true);
+        game.placeShip(0, ShipType.AIRCRAFTCARRIER, 0, 0, true);
+        assertDoesNotThrow(() -> game.removeShip(0, 0, 0));
+        int expectedResult = 100;
+        int actualResult = 0;
+
+        Square[][] squares = game.getPlayer(0).getSquares();
+        for(int x = 0; x < 10; x++){
+            for(int y = 0; y < 10; y++)
+            {
+                if(squares[x][y].getSquareState() == SquareState.WATER){
+                    actualResult++;
+                }
+            }
+        }
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testRemoveAllShipsWorksCorrectly(){
         // Register player in single-player mode
         Player player = new Player("Henk", true);
         game.registerPlayer(player,true);
@@ -117,7 +328,41 @@ public class ServerTest {
     }
 
     @Test
-    void fireShotIncorrectXcoordinates(){
+    void testRemoveAllShipsWorksCorrectly_ShipsPlacedAutomatically(){
+        // Register player in single-player mode
+        Player player = new Player("Henk", true);
+        game.registerPlayer(player,true);
+        game.placeShipsAutomatically(0);
+        game.removeAllShips(0);
+
+        int expectedResult = 100;
+        int actualResult = 0;
+
+        Square[][] squares = game.getPlayer(0).getSquares();
+        for(int x = 0; x < 10; x++){
+            for(int y = 0; y < 10; y++)
+            {
+                if(squares[x][y].getSquareState() == SquareState.WATER){
+                    actualResult++;
+                }
+            }
+        }
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testRemoveAllShipsNoShipsPlaced() {
+        Player player = new Player("Henk", true);
+        game.registerPlayer(player,true);
+
+        assertDoesNotThrow(() ->
+                game.removeAllShips(0)
+        );
+    }
+
+    @Test
+    void testFireShotIncorrectXcoordinates(){
         Player player = new Player("henk", false);
         game.registerPlayer(player, true);
 
@@ -126,7 +371,7 @@ public class ServerTest {
     }
 
     @Test
-    void fireShotIncorrectYcoordinates(){
+    void testFireShotIncorrectYcoordinates(){
         Player player = new Player("henk", false);
         game.registerPlayer(player, true);
 
@@ -135,23 +380,14 @@ public class ServerTest {
     }
 
     @Test
-    void placeShipSuccess(){
-        Player player = new Player("henk", false);
-        game.registerPlayer(player, true);
-        game.placeShip(0, ShipType.AIRCRAFTCARRIER,0, 0,true);
-        Square[][] squares = game.getPlayer(0).getSquares();
-        assertEquals(SquareState.SHIP, squares[0][0].getSquareState());
-    }
-
-    @Test
-    void shipPlacedOutsideGrid(){
+    void testShipPlacedOutsideGrid(){
         Player player = new Player("henk", false);
         game.registerPlayer(player, true);
         assertEquals(false, game.getPlayer(0).placeShip(ShipType.AIRCRAFTCARRIER, 9, 9,true));
     }
 
     @Test
-    void shipPlacedOnOtherShip(){
+    void testShipPlacedOnOtherShip(){
         Player player = new Player("henk", false);
         game.registerPlayer(player, true);
         game.getPlayer(0).placeShip(ShipType.AIRCRAFTCARRIER, 0, 0,true);
@@ -159,14 +395,72 @@ public class ServerTest {
     }
 
     @Test
-    void notifyWhenReadyWhenNotAllShipsArePlaced(){
+    void testNotifyWhenReadyAutomaticallyPlacedShips() {
+        Player player = new Player("henk", false);
+        game.registerPlayer(player, true);
+        game.placeShipsAutomatically(0);
+        assertEquals(true, game.getPlayer(0).notifyWhenReadyCheck());
+    }
+
+    @Test
+    void testNotifyWhenReadyAllShipsPlaced() {
+        Player player = new Player("henk", false);
+        game.registerPlayer(player, true);
+        game.placeShip(0, ShipType.AIRCRAFTCARRIER, 0, 0, true);
+        game.placeShip(0, ShipType.BATTLESHIP, 1, 0, true);
+        game.placeShip(0, ShipType.CRUISER, 2, 0, true);
+        game.placeShip(0, ShipType.SUBMARINE, 3, 0, true);
+        game.placeShip(0, ShipType.MINESWEEPER, 4, 0, true);
+        assertEquals(false, game.getPlayer(0).notifyWhenReadyCheck());
+    }
+
+    @Test
+    void testNotifyWhenReadyWhenNotAllShipsArePlaced(){
         Player player = new Player("henk", false);
         game.registerPlayer(player, true);
         assertEquals(false, game.getPlayer(0).notifyWhenReadyCheck());
     }
 
     @Test
-    void fireShotSuccessfully(){
+    void testNotifyWhenReadyWhenOneShipIsPlaced(){
+        Player player = new Player("henk", false);
+        game.registerPlayer(player, true);
+        game.placeShip(0, ShipType.AIRCRAFTCARRIER, 0, 0, true);
+        assertEquals(false, game.getPlayer(0).notifyWhenReadyCheck());
+    }
+
+    @Test
+    void testNotifyWhenReadyWhenTwoShipsArePlaced(){
+        Player player = new Player("henk", false);
+        game.registerPlayer(player, true);
+        game.placeShip(0, ShipType.AIRCRAFTCARRIER, 0, 0, true);
+        game.placeShip(0, ShipType.BATTLESHIP, 1, 0, true);
+        assertEquals(false, game.getPlayer(0).notifyWhenReadyCheck());
+    }
+
+    @Test
+    void testNotifyWhenReadyWhenThreeShipsArePlaced(){
+        Player player = new Player("henk", false);
+        game.registerPlayer(player, true);
+        game.placeShip(0, ShipType.AIRCRAFTCARRIER, 0, 0, true);
+        game.placeShip(0, ShipType.BATTLESHIP, 1, 0, true);
+        game.placeShip(0, ShipType.CRUISER, 2, 0, true);
+        assertEquals(false, game.getPlayer(0).notifyWhenReadyCheck());
+    }
+
+    @Test
+    void testNotifyWhenReadyWhenFourShipsArePlaced(){
+        Player player = new Player("henk", false);
+        game.registerPlayer(player, true);
+        game.placeShip(0, ShipType.AIRCRAFTCARRIER, 0, 0, true);
+        game.placeShip(0, ShipType.BATTLESHIP, 1, 0, true);
+        game.placeShip(0, ShipType.CRUISER, 2, 0, true);
+        game.placeShip(0, ShipType.SUBMARINE, 3, 0, true);
+        assertEquals(false, game.getPlayer(0).notifyWhenReadyCheck());
+    }
+
+    @Test
+    void testFireShotMissesRegistersCorrectly(){
         Player player = new Player("henk", false);
         game.registerPlayer(player, true);
         game.placeShipsAutomatically(0);
