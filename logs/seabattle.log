@@ -611,3 +611,15 @@ Press Start new game to continue
 2020-10-31 14:16:41,461 [WebSocketClient@569420030-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Start playing by selecting a square in cpu's grid
 2020-10-31 14:16:50,916 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Wait till cpu has fired a shot
 2020-10-31 14:16:58,957 [WebSocketClient@569420030-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Start playing by selecting a square in cpu's grid
+2020-11-01 20:19:29,874 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-11-01 20:20:36,537 [WebSocketClient@1877738504-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 231 - Player 231 registered
+2020-11-01 20:20:36,545 [WebSocketClient@1877738504-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 231 - Player 231 registered
+2020-11-01 20:20:36,545 [WebSocketClient@1877738504-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 231 - Your opponent is cpu
+2020-11-01 20:20:41,094 [WebSocketClient@1877738504-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 231 - Start playing by selecting a square in cpu's grid
+2020-11-01 20:20:49,712 [WebSocketClient@1877738504-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 231 - Ship of cpu is sunk
+2020-11-01 20:20:54,815 [WebSocketClient@1877738504-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 231 - Ship of cpu is sunk
+2020-11-01 20:21:01,845 [WebSocketClient@1877738504-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 231 - Ship of cpu is sunk
+2020-11-01 20:21:12,133 [WebSocketClient@1877738504-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 231 - Ship of cpu is sunk
+2020-11-01 20:21:20,207 [WebSocketClient@1877738504-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 231 - Winner: 231.
+Press Start new game to continue
+2020-11-01 20:53:34,426 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started

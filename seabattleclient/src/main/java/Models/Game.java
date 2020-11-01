@@ -93,7 +93,7 @@ public class Game {
     }
 
     public void registerPlayer(Player player, boolean singlePlayerMode){
-        if(playerList.size() == 2 || player.getName() == null || player.getName() == ""){
+        if(playerList.size() == 2 || player.getName() == null || player.getName().equals("")){
             throw new IllegalArgumentException();
         }
 
