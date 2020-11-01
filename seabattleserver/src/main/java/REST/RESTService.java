@@ -30,7 +30,7 @@ public class RESTService {
     @GET
     @Path("/account/all")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getAllAccounts() {
+    public Response allAccounts() {
 
 
         // Get all pets from the store

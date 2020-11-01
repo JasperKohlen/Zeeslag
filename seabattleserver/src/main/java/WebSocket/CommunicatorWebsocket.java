@@ -50,8 +50,7 @@ public class CommunicatorWebsocket {
         CommunicatorWebSocketMessage wbMessage = null;
         try {
             wbMessage = gson.fromJson(jsonMessage, CommunicatorWebSocketMessage.class);
-        }
-        catch (JsonSyntaxException ex) {
+        } catch (JsonSyntaxException ex) {
             System.out.println("[WebSocket ERROR: cannot parse Json message " + jsonMessage);
             return;
         }
@@ -64,17 +63,17 @@ public class CommunicatorWebsocket {
         CommunicatorWebSocketDTO dto = wbMessage.getDto();
         Game game = findGame(session);
 
-        if(game == null && dto.isSingleplayerMode()){
+        if (game == null && dto.isSingleplayerMode()) {
             game = new Game();
             games.add(game);
             game.connectToGameSinglePlayer(session);
         }
 
-        if(game == null && !dto.isSingleplayerMode()){
+        if (game == null && !dto.isSingleplayerMode()) {
             game = connectToGame(session);
         }
 
-        if(game == null){
+        if (game == null) {
             gameNotFoundError(session);
             return;
         }
@@ -101,6 +100,9 @@ public class CommunicatorWebsocket {
                     break;
                 case NOTIFYWHENREADY:
                     logicHandler.notifyWhenReady(game, dto.getPlayerNr(), session);
+                    break;
+                case STARTNEWGAME:
+                    logicHandler.startNewGame(game, dto.getPlayerNr(), session);
                     break;
                 default:
                     System.out.println("[WebSocket ERROR: cannot process Json message " + jsonMessage);

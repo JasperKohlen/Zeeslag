@@ -47,4 +47,9 @@ public class WebSocketClientEventHandler {
         CommunicatorWebSocketMessage message = new CommunicatorWebSocketMessage(CommunicatorWebSocketMessageOperation.FIRESHOT, dto);
         communicatorWebSocketClient.sendMessageToServer(message);
     }
+
+    public void newGame(CommunicatorWebSocketDTO dto){
+        CommunicatorWebSocketMessage message = new CommunicatorWebSocketMessage(CommunicatorWebSocketMessageOperation.STARTNEWGAME, dto);
+        communicatorWebSocketClient.sendMessageToServer(message);
+    }
 }

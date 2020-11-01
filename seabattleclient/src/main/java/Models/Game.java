@@ -80,6 +80,13 @@ public class Game {
         playerList.get(playerNr).getSquares();
     }
 
+    //TODO: remove all enemy ships and unregister player
+    public Square[][] startNewGame(int playerNr){
+        playerList.get(0).removeAllShips();
+        playerList.get(1).removeAllShips();
+        return playerList.get(playerNr).getSquares();
+    }
+
 
     public boolean isSinglePlayerMode() {
         return singlePlayerMode;

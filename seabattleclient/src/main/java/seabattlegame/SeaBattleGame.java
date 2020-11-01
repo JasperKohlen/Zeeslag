@@ -95,7 +95,8 @@ public class SeaBattleGame implements ISeaBattleGame {
 
     @Override
     public void startNewGame(int playerNr) {
-        throw new UnsupportedOperationException("Method startNewGame() not implemented.");
+        CommunicatorWebSocketDTO dto = new CommunicatorWebSocketDTO(playerNr);
+        webSocketClient.newGame(dto);
     }
 
     @Override

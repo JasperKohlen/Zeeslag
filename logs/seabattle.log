@@ -445,6 +445,7 @@ Press Start new game to continue
 2020-10-30 13:52:21,048 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Press Start new game
 2020-10-30 13:52:22,376 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Press Start new game
 2020-10-30 13:52:26,615 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for playing vs cpu - Select square in cpu's grid to fire
+<<<<<<< HEAD
 2020-10-30 20:38:35,019 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
 2020-10-30 20:39:06,297 [WebSocketClient@1975527158-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasperkohlenkohlen - Player jasperkohlenkohlen registered
 2020-10-30 20:39:06,302 [WebSocketClient@1975527158-25] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasperkohlenkohlen - Player jasperkohlenkohlen registered
@@ -469,3 +470,171 @@ Press Start new game to continue
 2020-10-30 20:41:26,990 [WebSocketClient@2133510337-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for player2 - Game started, other player is first.
 2020-10-30 20:41:26,990 [WebSocketClient@2133510337-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for player2 - Please wait for other player.
 2020-10-30 20:41:44,321 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for player1 - Wait till player2 has fired a shot
+=======
+2020-10-31 11:56:09,107 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 11:56:16,758 [WebSocketClient@1638470508-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-31 11:56:16,766 [WebSocketClient@1638470508-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-31 11:56:16,766 [WebSocketClient@1638470508-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Your opponent is cpu
+2020-10-31 11:56:44,538 [WebSocketClient@1638470508-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Please place all ships.
+2020-10-31 11:57:07,767 [WebSocketClient@1638470508-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Start playing by selecting a square in cpu's grid
+2020-10-31 11:57:18,006 [WebSocketClient@1638470508-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Ship of cpu is sunk
+2020-10-31 11:57:26,225 [WebSocketClient@1638470508-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Ship of cpu is sunk
+2020-10-31 11:57:32,556 [WebSocketClient@1638470508-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Ship of cpu is sunk
+2020-10-31 11:57:46,212 [WebSocketClient@1638470508-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Ship of cpu is sunk
+2020-10-31 11:57:49,483 [WebSocketClient@1638470508-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Winner: 123.
+Press Start new game to continue
+2020-10-31 11:57:53,663 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Press Start new game
+2020-10-31 12:27:31,563 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 12:28:07,657 [WebSocketClient@485095872-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Player jasper registered
+2020-10-31 12:28:07,661 [WebSocketClient@485095872-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Player jasper registered
+2020-10-31 12:28:07,661 [WebSocketClient@485095872-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Your opponent is cpu
+2020-10-31 12:28:14,290 [WebSocketClient@485095872-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Start playing by selecting a square in cpu's grid
+2020-10-31 12:28:24,587 [WebSocketClient@485095872-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Ship of cpu is sunk
+2020-10-31 12:28:26,220 [WebSocketClient@485095872-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Ship of cpu is sunk
+2020-10-31 12:28:27,596 [WebSocketClient@485095872-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Ship of cpu is sunk
+2020-10-31 12:28:32,572 [WebSocketClient@485095872-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Ship of cpu is sunk
+2020-10-31 12:28:35,092 [WebSocketClient@485095872-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Winner: jasper.
+Press Start new game to continue
+2020-10-31 12:28:36,942 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Press Start new game
+2020-10-31 12:28:58,185 [WebSocketClient@485095872-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Start playing by selecting a square in cpu's grid
+2020-10-31 12:29:01,943 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Wait till cpu has fired a shot
+2020-10-31 12:29:03,743 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Wait till cpu has fired a shot
+2020-10-31 12:41:26,704 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 12:41:34,016 [WebSocketClient@1882309230-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Player jasper registered
+2020-10-31 12:41:34,019 [WebSocketClient@1882309230-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Player jasper registered
+2020-10-31 12:41:34,019 [WebSocketClient@1882309230-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Your opponent is cpu
+2020-10-31 12:41:57,673 [WebSocketClient@1882309230-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Start playing by selecting a square in cpu's grid
+2020-10-31 12:42:08,850 [WebSocketClient@1882309230-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Ship of cpu is sunk
+2020-10-31 12:42:10,643 [WebSocketClient@1882309230-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Ship of cpu is sunk
+2020-10-31 12:42:12,659 [WebSocketClient@1882309230-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Ship of cpu is sunk
+2020-10-31 12:42:19,042 [WebSocketClient@1882309230-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Ship of cpu is sunk
+2020-10-31 12:42:30,562 [WebSocketClient@1882309230-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Winner: jasper.
+Press Start new game to continue
+2020-10-31 12:42:42,440 [WebSocketClient@1882309230-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Start playing by selecting a square in cpu's grid
+2020-10-31 12:42:44,718 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for jasper - Wait till cpu has fired a shot
+2020-10-31 12:43:37,611 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 12:43:41,806 [WebSocketClient@2008506893-28] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsf - Player dsf registered
+2020-10-31 12:43:41,809 [WebSocketClient@2008506893-28] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsf - Player dsf registered
+2020-10-31 12:43:41,809 [WebSocketClient@2008506893-28] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsf - Your opponent is cpu
+2020-10-31 12:44:09,685 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 12:44:11,245 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for  - Enter your name before registering
+2020-10-31 12:44:15,619 [WebSocketClient@269881204-28] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsa - Player dsa registered
+2020-10-31 12:44:15,620 [WebSocketClient@269881204-28] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsa - Player dsa registered
+2020-10-31 12:44:15,620 [WebSocketClient@269881204-28] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsa - Your opponent is cpu
+2020-10-31 12:47:50,523 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 12:47:55,044 [WebSocketClient@134477396-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfs - Player dfs registered
+2020-10-31 12:47:55,047 [WebSocketClient@134477396-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfs - Player dfs registered
+2020-10-31 12:47:55,047 [WebSocketClient@134477396-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfs - Your opponent is cpu
+2020-10-31 12:47:59,576 [WebSocketClient@134477396-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfs - Start playing by selecting a square in cpu's grid
+2020-10-31 12:48:04,269 [WebSocketClient@134477396-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfs - Ship of cpu is sunk
+2020-10-31 12:48:09,944 [WebSocketClient@134477396-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfs - Ship of cpu is sunk
+2020-10-31 12:48:12,357 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfs - Wait till cpu has fired a shot
+2020-10-31 12:48:14,007 [WebSocketClient@134477396-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfs - Start playing by selecting a square in cpu's grid
+2020-10-31 12:48:15,269 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfs - Wait till cpu has fired a shot
+2020-10-31 12:48:17,758 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfs - Wait till cpu has fired a shot
+2020-10-31 12:50:54,861 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 12:51:09,349 [WebSocketClient@207817330-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sfds - Player sfds registered
+2020-10-31 12:51:09,357 [WebSocketClient@207817330-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sfds - Player sfds registered
+2020-10-31 12:51:09,357 [WebSocketClient@207817330-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sfds - Your opponent is cpu
+2020-10-31 12:51:16,911 [WebSocketClient@207817330-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sfds - Start playing by selecting a square in cpu's grid
+2020-10-31 12:51:30,461 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sfds - Wait till cpu has fired a shot
+2020-10-31 12:51:32,765 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sfds - Wait till cpu has fired a shot
+2020-10-31 12:52:10,204 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 12:52:14,449 [WebSocketClient@82418243-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for adsd - Player adsd registered
+2020-10-31 12:52:14,460 [WebSocketClient@82418243-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for adsd - Player adsd registered
+2020-10-31 12:52:14,461 [WebSocketClient@82418243-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for adsd - Your opponent is cpu
+2020-10-31 12:52:19,144 [WebSocketClient@82418243-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for adsd - Start playing by selecting a square in cpu's grid
+2020-10-31 12:52:32,565 [WebSocketClient@82418243-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for adsd - Ship of cpu is sunk
+2020-10-31 12:52:39,737 [WebSocketClient@82418243-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for adsd - Ship of cpu is sunk
+2020-10-31 12:52:41,220 [WebSocketClient@82418243-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for adsd - Ship of cpu is sunk
+2020-10-31 12:52:46,432 [WebSocketClient@82418243-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for adsd - Ship of cpu is sunk
+2020-10-31 12:53:01,434 [WebSocketClient@82418243-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for adsd - Winner: adsd.
+Press Start new game to continue
+2020-10-31 12:53:09,437 [WebSocketClient@82418243-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for adsd - Start playing by selecting a square in cpu's grid
+2020-10-31 12:53:15,557 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for adsd - Wait till cpu has fired a shot
+2020-10-31 12:54:09,897 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 12:54:15,072 [WebSocketClient@1639149156-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-31 12:54:19,631 [WebSocketClient@1639149156-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Please wait for other player.
+2020-10-31 13:18:02,345 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 13:18:06,836 [WebSocketClient@1877738504-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-31 13:18:06,840 [WebSocketClient@1877738504-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Player 123 registered
+2020-10-31 13:18:06,840 [WebSocketClient@1877738504-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Your opponent is cpu
+2020-10-31 13:18:12,215 [WebSocketClient@1877738504-28] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Start playing by selecting a square in cpu's grid
+2020-10-31 13:18:17,708 [WebSocketClient@1877738504-28] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Ship of cpu is sunk
+2020-10-31 13:18:35,177 [WebSocketClient@1877738504-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Ship of cpu is sunk
+2020-10-31 13:18:42,969 [WebSocketClient@1877738504-28] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Ship of cpu is sunk
+2020-10-31 13:18:55,057 [WebSocketClient@1877738504-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Ship of cpu is sunk
+2020-10-31 13:18:58,817 [WebSocketClient@1877738504-28] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Winner: 123.
+Press Start new game to continue
+2020-10-31 13:19:17,126 [WebSocketClient@1877738504-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for 123 - Please place all ships.
+2020-10-31 13:20:45,988 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 13:20:50,018 [WebSocketClient@1824405455-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsf - Player dsf registered
+2020-10-31 13:20:50,021 [WebSocketClient@1824405455-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsf - Player dsf registered
+2020-10-31 13:20:50,022 [WebSocketClient@1824405455-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsf - Your opponent is cpu
+2020-10-31 13:20:53,534 [WebSocketClient@1824405455-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsf - Start playing by selecting a square in cpu's grid
+2020-10-31 13:20:59,322 [WebSocketClient@1824405455-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsf - Ship of cpu is sunk
+2020-10-31 13:21:02,186 [WebSocketClient@1824405455-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsf - Ship of cpu is sunk
+2020-10-31 13:21:12,626 [WebSocketClient@1824405455-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsf - Ship of cpu is sunk
+2020-10-31 13:21:21,249 [WebSocketClient@1824405455-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsf - Ship of cpu is sunk
+2020-10-31 13:21:25,054 [WebSocketClient@1824405455-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dsf - Winner: dsf.
+Press Start new game to continue
+2020-10-31 13:30:05,724 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 13:30:13,139 [WebSocketClient@2137488517-28] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfsdf - Player dfsdf registered
+2020-10-31 13:30:13,141 [WebSocketClient@2137488517-28] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfsdf - Player dfsdf registered
+2020-10-31 13:30:13,141 [WebSocketClient@2137488517-28] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfsdf - Your opponent is cpu
+2020-10-31 13:30:17,271 [WebSocketClient@2137488517-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfsdf - Start playing by selecting a square in cpu's grid
+2020-10-31 13:30:23,499 [WebSocketClient@2137488517-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfsdf - Ship of cpu is sunk
+2020-10-31 13:30:25,427 [WebSocketClient@2137488517-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfsdf - Ship of cpu is sunk
+2020-10-31 13:30:40,923 [WebSocketClient@2137488517-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfsdf - Ship of cpu is sunk
+2020-10-31 13:30:43,398 [WebSocketClient@2137488517-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfsdf - Ship of cpu is sunk
+2020-10-31 13:30:50,810 [WebSocketClient@2137488517-33] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dfsdf - Winner: dfsdf.
+Press Start new game to continue
+2020-10-31 13:41:05,206 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 13:41:10,632 [WebSocketClient@534850617-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Player sdds registered
+2020-10-31 13:41:10,634 [WebSocketClient@534850617-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Player sdds registered
+2020-10-31 13:41:10,634 [WebSocketClient@534850617-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Your opponent is cpu
+2020-10-31 13:41:16,125 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Select square in sdds's grid to place ships
+2020-10-31 13:41:21,393 [WebSocketClient@534850617-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Start playing by selecting a square in cpu's grid
+2020-10-31 13:41:26,180 [WebSocketClient@534850617-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Ship of cpu is sunk
+2020-10-31 13:41:33,505 [WebSocketClient@534850617-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Ship of cpu is sunk
+2020-10-31 13:41:37,626 [WebSocketClient@534850617-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Ship of cpu is sunk
+2020-10-31 13:41:49,281 [WebSocketClient@534850617-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Ship of cpu is sunk
+2020-10-31 13:41:54,154 [WebSocketClient@534850617-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Winner: sdds.
+Press Start new game to continue
+2020-10-31 13:42:01,469 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Select square in sdds's grid to place ships
+2020-10-31 13:42:11,198 [WebSocketClient@534850617-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Please place all ships.
+2020-10-31 13:42:13,133 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Select square in sdds's grid to place ship
+2020-10-31 13:42:22,534 [WebSocketClient@534850617-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Start playing by selecting a square in cpu's grid
+2020-10-31 13:42:34,965 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sdds - Wait till cpu has fired a shot
+2020-10-31 13:47:11,430 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 13:47:17,016 [WebSocketClient@1639149156-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sad - Player sad registered
+2020-10-31 13:47:17,018 [WebSocketClient@1639149156-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sad - Player sad registered
+2020-10-31 13:47:17,019 [WebSocketClient@1639149156-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sad - Your opponent is cpu
+2020-10-31 13:47:32,502 [WebSocketClient@1639149156-29] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for sad - Start playing by selecting a square in cpu's grid
+2020-10-31 13:58:51,204 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 13:59:13,191 [WebSocketClient@878950329-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dasdsa - Player dasdsa registered
+2020-10-31 13:59:13,193 [WebSocketClient@878950329-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dasdsa - Player dasdsa registered
+2020-10-31 13:59:13,193 [WebSocketClient@878950329-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dasdsa - Your opponent is cpu
+2020-10-31 13:59:37,391 [WebSocketClient@878950329-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dasdsa - Start playing by selecting a square in cpu's grid
+2020-10-31 13:59:47,403 [WebSocketClient@878950329-32] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dasdsa - Ship of cpu is sunk
+2020-10-31 13:59:49,432 [WebSocketClient@878950329-32] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dasdsa - Ship of cpu is sunk
+2020-10-31 13:59:53,798 [WebSocketClient@878950329-32] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dasdsa - Ship of cpu is sunk
+2020-10-31 13:59:57,441 [WebSocketClient@878950329-32] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dasdsa - Ship of cpu is sunk
+2020-10-31 14:00:27,704 [WebSocketClient@878950329-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for dasdsa - Winner: dasdsa.
+Press Start new game to continue
+2020-10-31 14:15:18,768 [JavaFX Application Thread] [INFO ] seabattlegui.SeaBattleApplication - Seabattle started
+2020-10-31 14:15:23,947 [WebSocketClient@569420030-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Player ssfsdfds registered
+2020-10-31 14:15:23,954 [WebSocketClient@569420030-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Player ssfsdfds registered
+2020-10-31 14:15:23,955 [WebSocketClient@569420030-26] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Your opponent is cpu
+2020-10-31 14:15:27,540 [WebSocketClient@569420030-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Start playing by selecting a square in cpu's grid
+2020-10-31 14:15:36,418 [WebSocketClient@569420030-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Ship of cpu is sunk
+2020-10-31 14:15:42,728 [WebSocketClient@569420030-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Ship of cpu is sunk
+2020-10-31 14:16:16,024 [WebSocketClient@569420030-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Ship of cpu is sunk
+2020-10-31 14:16:19,320 [WebSocketClient@569420030-31] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Ship of cpu is sunk
+2020-10-31 14:16:33,696 [WebSocketClient@569420030-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Winner: ssfsdfds.
+Press Start new game to continue
+2020-10-31 14:16:36,524 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Select square in ssfsdfds's grid to place ships
+2020-10-31 14:16:41,461 [WebSocketClient@569420030-30] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Start playing by selecting a square in cpu's grid
+2020-10-31 14:16:50,916 [JavaFX Application Thread] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Wait till cpu has fired a shot
+2020-10-31 14:16:58,957 [WebSocketClient@569420030-27] [DEBUG] seabattlegui.SeaBattleApplication - Show Message for ssfsdfds - Start playing by selecting a square in cpu's grid
+>>>>>>> 4bded507b1369d952b2d0ead60076a8749eca4b3

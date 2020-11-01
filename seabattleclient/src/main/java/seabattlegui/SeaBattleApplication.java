@@ -568,7 +568,9 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
             return;
         }
         playingMode = true;
-
+        buttonReadyToPlay.setDisable(true);
+        buttonRemoveAllShips.setDisable(true);
+        buttonPlaceAllShips.setDisable(true);
         showMessage("Start playing by selecting a square in " + opponentName + "\'s grid");
     }
 
@@ -824,6 +826,10 @@ public class SeaBattleApplication extends Application implements ISeaBattleGUI {
         radioSinglePlayer.setDisable(false);
         radioMultiPlayer.setDisable(false);
         buttonRegisterPlayer.setDisable(false);
+        buttonReadyToPlay.setDisable(false);
+        buttonRemoveAllShips.setDisable(false);
+        buttonPlaceAllShips.setDisable(false);
+        buttonStartNewGame.setDisable(true);
     }
 
     /**
